@@ -1,0 +1,7 @@
+{
+    "type":"sequence",
+    "functions":[
+        "dapvp:system/swords/generic",
+        "dapvp:system/swords/block"
+    ]
+}

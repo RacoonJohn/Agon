@@ -1,0 +1,38 @@
+
+{
+    "type":"sequence",
+    "functions":
+[{
+    "type": "set_attributes",
+    "modifiers": [
+        {"slot": "mainhand","id":"minecraft:base_attack_speed","attribute": "attack_speed","amount": 1.79769313486232E+308,"operation": "add_value"},
+        {"id":"minecraft:base_attack_knockback","amount": 0,"attribute": "attack_knockback","operation": "add_value","slot": "mainhand"}
+
+    ],
+    "replace": false
+},
+{
+    "type": "set_components",
+    "components": {
+        "attack_animation":{
+            "type": "whack"
+        },
+        "weapon": {
+            "disable_blocking_for_seconds": 0.55
+        },
+        "!pot_decorations": {},
+        "max_stack_size": 1,
+        "rarity": "common"
+    }
+},
+{
+    "type": "set_custom_data",
+    "tag": {
+        "combo":"",
+        "dapvpWPN":true,
+        "toInit":false,
+        "nerfReach":true
+    }
+
+}]
+}

@@ -1,0 +1,17 @@
+{
+    "pools":[{
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "item",
+                "name": "mace"
+            }
+        ]
+    }],
+    "functions": [
+        {
+            "type": "reference",
+            "name": "dapvp:system/mace/generic"
+        }
+    ]
+}

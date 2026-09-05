@@ -1,0 +1,12 @@
+{
+  "pack": {
+    "description": "",
+    "pack_format":119
+  },
+  "filter": {
+    "block": [{
+      "namespace": "minecraft",
+      "path": "advancement/"
+    }]
+  }
+}

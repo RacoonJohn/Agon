@@ -1,0 +1,23 @@
+{
+    "type":"sequence",
+    "functions": 
+[
+    {
+        "type": "set_item",
+        "item": "bow"
+    },
+    {
+    "type": "set_components",
+    "components": {
+        "!consumable": {},
+        "item_name":"Cooldown Bow"
+    }
+},
+{
+    "type": "set_custom_data",
+    "tag": {
+        "place_holder":{"inited":true}
+    }
+}]
+
+}

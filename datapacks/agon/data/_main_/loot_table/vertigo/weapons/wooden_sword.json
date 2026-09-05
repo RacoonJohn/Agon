@@ -1,0 +1,17 @@
+{
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "item",
+            "name": "wooden_sword",
+            "modifier": [{
+                "type": "set_components",
+                "components": {
+                    "unbreakable": {}
+                }
+            },
+            "_rin_:api/cant_drop"
+            ]
+        }]
+    }]
+}

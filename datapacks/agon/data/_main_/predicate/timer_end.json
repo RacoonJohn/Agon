@@ -1,0 +1,18 @@
+{
+    "type": "int_value_check",
+    "value": {
+        "type": "score",
+        "score": "date",
+        "target": "this"
+    },
+    "test": {
+        "max": {
+            "type": "score",
+            "score": "rMath",
+            "target": {
+                "type": "fixed",
+                "name": "#gametime"
+            }
+        }
+    }
+}

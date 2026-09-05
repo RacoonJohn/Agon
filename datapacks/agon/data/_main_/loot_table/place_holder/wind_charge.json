@@ -1,0 +1,23 @@
+{
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "item",
+            "name": "flower_banner_pattern",
+            "modifier": [
+                {
+                    "type": "set_components",
+                    "components": {
+                        "!banner_patterns": {},
+                        "!provides_banner_patterns": {},
+                        "item_model":"wind_charge",
+                        "item_name":{"translate": "item.minecraft.wind_charge"},
+                        "max_stack_size":16,
+
+                        "custom_data":{"_rin_":{"cant_drop":true},"item":"wind_charge","place_holder":{"id":"wind_charge","inited":false}}
+                    }
+                }
+            ]
+        }]
+    }]
+}

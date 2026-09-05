@@ -1,0 +1,16 @@
+{
+    "type": "random_chance",
+    "chance": {"type": "mul","inputs": [{
+        "type": "from_int","input":{
+            "type": "score",
+            "score": "dapvp.math",
+            "target": {
+                "type": "fixed",
+                "name": "#chance"
+            }
+        } 
+    },
+    0.0001
+    ]
+}
+}

@@ -1,0 +1,22 @@
+{
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "item",
+            "name": "flow_banner_pattern"
+        }],
+        "modifier": [{
+                "type": "set_components",
+                "components": {
+                    "item_model": "ladder",
+                    "item_name":"Instant Ladder",
+                    "max_stack_size":16,
+                    "!banner_patterns": {},
+                    "!provides_banner_patterns":{},
+                    "custom_data":{"_rin_":{"cant_drop":true},"place_holder":{"id":"ladder","inited":false}},
+                    "!consumable": {}
+                }
+            }
+        ]
+    }]
+}

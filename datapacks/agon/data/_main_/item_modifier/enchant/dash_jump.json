@@ -1,0 +1,13 @@
+{
+    "type": "set_enchantments",
+    "enchantments": {
+        "_main_:dash_jump": {
+            "type": "score",
+            "target": {
+                "type": "fixed",
+                "name": "#level"
+            },
+            "score": "rMath"
+        }
+    }
+}

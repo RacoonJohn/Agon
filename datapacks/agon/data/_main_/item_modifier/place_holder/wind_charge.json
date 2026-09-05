@@ -1,0 +1,14 @@
+{
+    "type":"sequence",
+    "functions": [{
+    "type": "set_item",
+    "item": "wind_charge"
+},
+{
+    "type": "set_custom_data",
+    "tag": {
+        "place_holder":{"inited":true}
+    }
+}]
+
+}

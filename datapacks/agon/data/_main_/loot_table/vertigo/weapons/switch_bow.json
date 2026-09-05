@@ -1,0 +1,18 @@
+{
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "item",
+            "name": "bow",
+            "modifier": [{
+                "type": "set_components",
+                "components": {
+                    "unbreakable": {},
+                    "enchantments": {"_main_:switch": 1}
+                }
+            },
+            "_rin_:api/cant_drop"
+            ]
+        }]
+    }]
+}

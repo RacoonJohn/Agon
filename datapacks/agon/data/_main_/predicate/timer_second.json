@@ -1,0 +1,138 @@
+
+{
+    "type": "any_of",
+    "terms": [
+    {
+        "type": "int_value_check",
+        "value": {
+            "type": "score",
+            "score": "rMath",
+            "target": {
+                "type": "fixed",
+                "name": "#temp"
+            }
+        },
+        "test": 199
+    },
+    {
+        "type": "int_value_check",
+        "value": {
+            "type": "score",
+            "score": "rMath",
+            "target": {
+                "type": "fixed",
+                "name": "#temp"
+            }
+        },
+        "test": 179
+    },
+    {
+        "type": "int_value_check",
+        "value": {
+            "type": "score",
+            "score": "rMath",
+            "target": {
+                "type": "fixed",
+                "name": "#temp"
+            }
+        },
+        "test": 159
+    },
+    {
+        "type": "int_value_check",
+        "value": {
+            "type": "score",
+            "score": "rMath",
+            "target": {
+                "type": "fixed",
+                "name": "#temp"
+            }
+        },
+        "test": 139
+    },
+    {
+        "type": "int_value_check",
+        "value": {
+            "type": "score",
+            "score": "rMath",
+            "target": {
+                "type": "fixed",
+                "name": "#temp"
+            }
+        },
+        "test": 119
+    },
+    {
+        "type": "int_value_check",
+        "value": {
+            "type": "score",
+            "score": "rMath",
+            "target": {
+                "type": "fixed",
+                "name": "#temp"
+            }
+        },
+        "test": 99
+    },
+    {
+        "type": "int_value_check",
+        "value": {
+            "type": "score",
+            "score": "rMath",
+            "target": {
+                "type": "fixed",
+                "name": "#temp"
+            }
+        },
+        "test": 79
+    },
+    {
+        "type": "int_value_check",
+        "value": {
+            "type": "score",
+            "score": "rMath",
+            "target": {
+                "type": "fixed",
+                "name": "#temp"
+            }
+        },
+        "test": 59
+    },
+    {
+        "type": "int_value_check",
+        "value": {
+            "type": "score",
+            "score": "rMath",
+            "target": {
+                "type": "fixed",
+                "name": "#temp"
+            }
+        },
+        "test": 39
+    },
+    {
+        "type": "int_value_check",
+        "value": {
+            "type": "score",
+            "score": "rMath",
+            "target": {
+                "type": "fixed",
+                "name": "#temp"
+            }
+        },
+        "test": 19
+    },
+    {
+        "type": "int_value_check",
+        "value": {
+            "type": "score",
+            "score": "rMath",
+            "target": {
+                "type": "fixed",
+                "name": "#temp"
+            }
+        },
+        "test": 1
+    }
+]
+}

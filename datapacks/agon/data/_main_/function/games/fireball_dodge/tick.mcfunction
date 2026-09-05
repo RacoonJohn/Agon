@@ -1,0 +1,48 @@
+
+data modify storage math:data board set value []
+
+
+function _main_:games/global/preset/get_game
+
+
+
+tag @a[predicate=_main_:search_game] add myPlayer
+
+execute as @a[tag=myPlayer] at @s run function _main_:games/fireball_dodge/player/main
+
+
+execute positioned 968 -64 1000 as @e[type=item,dx=195,dz=65,dy=100] if items entity @s container.0 #_main_:concrete unless items entity @s container.0 *[custom_data~{"_rin_":{"cant_drop":true}}] run kill @s
+
+
+
+tag @a remove myPlayer
+scoreboard players operation Math.In0 rMath = #gametime2 rMath 
+
+function math:convert/tick_to_mmss
+data modify storage _rin_:intern display.temp set value [{text:" ",bold:true},{nbt:"out.min",storage:"math:data",interpret:true,color:"warning"},{text:":",color:"text-muted"},{nbt:"out.sec",storage:"math:data",interpret:true,color:"warning"}]
+function _rin_:sys/style/change_color_list
+data modify storage math:data board append from storage _rin_:intern display.temp
+
+data modify storage math:data board append value ""
+
+scoreboard players operation #limit rMath = #fbdBo settings
+scoreboard players remove #limit rMath 1
+scoreboard players operation #limit rMath /= #2 rMath
+scoreboard players set #count rMath 0
+scoreboard players operation #limit1 rMath = #r points
+scoreboard players operation #limit3 rMath = #b points
+data modify storage math:data str set value {rc:"🗡",gc:"🪓",bc:"🛡",pc:"🧪"}
+function _main_:games/global/display/points/loop
+data modify storage _rin_:intern display.temp set value ["",{nbt:"str.r",storage:"math:data",interpret:true,color:"r",font:"pvp:icons"},{nbt:"str.r_",storage:"math:data",interpret:true,color:"rm",font:"pvp:icons"}]
+function _rin_:sys/style/change_color_list
+data modify storage math:data board append from storage _rin_:intern display.temp
+data modify storage _rin_:intern display.temp set value ["",{nbt:"str.b",storage:"math:data",interpret:true,color:"b",font:"pvp:icons"},{nbt:"str.b_",storage:"math:data",interpret:true,color:"bm",font:"pvp:icons"}]
+function _rin_:sys/style/change_color_list
+data modify storage math:data board append from storage _rin_:intern display.temp
+
+
+
+
+function _main_:games/global/display/sidebar
+
+

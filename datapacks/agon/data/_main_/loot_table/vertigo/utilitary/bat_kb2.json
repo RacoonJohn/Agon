@@ -1,0 +1,18 @@
+{
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "loot_table",
+            "value": "_main_:specials/bat",
+            "modifier": [{
+                "type": "set_components",
+                "components": {
+                    "unbreakable": {},
+                    "enchantments": {"knockback": 2}
+                }
+            },
+            "_rin_:api/cant_drop"
+            ]
+        }]
+    }]
+}

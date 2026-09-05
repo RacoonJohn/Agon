@@ -1,0 +1,25 @@
+{
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "item",
+            "name": "mojang_banner_pattern",
+            "modifier": [{
+                "type": "set_components",
+                "components": {
+                    "!banner_patterns": {},
+                    "!provides_banner_patterns": {},
+                    "item_name": "Menu",
+                    "consumable": {"consume_seconds": 1000000,"animation":"bundle","sound": {"sound_id": "empty"},"has_consume_particles": false}
+                }
+            },
+            {
+                "type": "set_custom_data",
+                "tag": {
+                    "_rin_":{"cant_drop":true},
+                    "item":"menu"
+                }
+            }]
+        }]
+    }]
+}

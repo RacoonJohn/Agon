@@ -1,0 +1,1 @@
+$data modify storage math:data str.b set value "$(b)$(bc)"

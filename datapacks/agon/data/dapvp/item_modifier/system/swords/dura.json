@@ -1,0 +1,89 @@
+{
+    "type":"sequence",
+    "functions": 
+[{
+    "type": "filtered",
+    "item_filter": {
+        "items": ["angler_pottery_sherd"]
+    },
+    "on_pass": {
+        "type": "set_components",
+        "components": {
+            "max_damage": 59
+        }
+    }
+},
+{
+    "type": "filtered",
+    "item_filter": {
+        "items": ["archer_pottery_sherd"]
+    },
+    "on_pass": {
+        "type": "set_components",
+        "components": {
+            "max_damage": 131
+        }
+    }
+},
+{
+    "type": "filtered",
+    "item_filter": {
+        "items": ["arms_up_pottery_sherd"]
+    },
+    "on_pass": {
+        "type": "set_components",
+        "components": {
+            "max_damage": 190
+        }
+    }
+},
+{
+    "type": "filtered",
+    "item_filter": {
+        "items": ["blade_pottery_sherd"]
+    },
+    "on_pass": {
+        "type": "set_components",
+        "components": {
+            "max_damage": 250
+        }
+    }
+},
+{
+    "type": "filtered",
+    "item_filter": {
+        "items": ["brewer_pottery_sherd"]
+    },
+    "on_pass": {
+        "type": "set_components",
+        "components": {
+            "max_damage": 32
+        }
+    }
+},
+{
+    "type": "filtered",
+    "item_filter": {
+        "items": ["burn_pottery_sherd"]
+    },
+    "on_pass": {
+        "type": "set_components",
+        "components": {
+            "max_damage": 1561
+        }
+    }
+},
+{
+    "type": "filtered",
+    "item_filter": {
+        "items": ["danger_pottery_sherd"]
+    },
+    "on_pass": {
+        "type": "set_components",
+        "components": {
+            "max_damage": 2031
+        }
+    }
+}
+]
+}

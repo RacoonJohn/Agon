@@ -1,0 +1,25 @@
+{
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "item",
+            "name": "flow_banner_pattern"
+        }],
+        "modifier": [{
+                "type": "set_components",
+                "components": {
+                    "item_model": "white_concrete",
+                    "item_name":["Infinite ",{"translate": "block.minecraft.white_concrete"}],
+                    "max_stack_size":99,
+                    "!banner_patterns": {},
+                    "!provides_banner_patterns":{},
+                    "custom_data":{"_rin_":{"cant_drop":true},"place_holder":{"id":"inf_blocks","inited":false}},
+                    "!consumable": {}
+                }
+            },
+            {
+                "type": "set_count",
+                "count": 99
+            }]
+    }]
+}

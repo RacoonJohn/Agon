@@ -1,0 +1,74 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "type": "uniform",
+                "min": 2,
+                "max": {
+                    "type": "binomial",
+                    "n": 3,"p":0.6
+                }
+            },
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "_main_:specials/shield",
+                    "weight": 3,
+                    "modifier": [{
+                        "type": "set_count",
+                        "count": 1
+                    }]
+                },
+                {
+                    "type": "loot_table",
+                    "value": "_main_:specials/gap",
+                    "weight": 8,
+                    "modifier": [{
+                        "type": "set_count",
+                        "count": 1
+                    }]
+                },
+                {
+                    "type": "loot_table",
+                    "value": "_main_:swords/iron",
+                    "weight": 4
+                },
+                {
+                    "type": "loot_table",
+                    "value": "_main_:axes/iron",
+                    "weight": 4
+                },
+                {
+                    "type": "loot_table",
+                    "value": "_main_:specials/fire_charge",
+                    "weight": 25,
+                    "modifier": [{
+                        "type": "set_count",
+                        "count": {
+                            "type": "uniform",
+                            "min": 1,
+                            "max": {
+                                "type": "binomial",
+                                "n": 6,"p":0.4
+                            }
+                        }
+                    }]
+                },
+                {
+                    "type": "loot_table",
+                    "value": "_main_:specials/wool",
+                    "weight": 9,
+                    "modifier": [{
+                        "type": "set_count",
+                        "count": {
+                            "type": "binomial",
+                            "n": 10, "p":0.4
+                        }
+                    }]
+                }
+            
+            
+            ]
+        }
+    ]
+}

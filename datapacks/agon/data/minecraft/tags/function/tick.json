@@ -1,0 +1,10 @@
+{
+    "values": [
+        "_main_:tick",
+        "_rin_:sys/tick",
+        "dapvp:system/tick",
+        "buttons:tick",
+        "fptrick_impulse:tick",
+        "credit:sys/tick"
+    ]
+}

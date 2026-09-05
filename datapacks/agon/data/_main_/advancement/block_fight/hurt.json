@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "player_hit": {
+      "trigger": "entity_hurt_player",
+      "conditions": {
+        "damage": {
+            "source_entity": {
+            "slots": {
+                "weapon.mainhand": {
+                  "predicates":{
+                    "custom_data": {"dapvpWPN":true}
+                  }
+                  }
+            }
+            }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "_main_:games/block_fight/player/hurt"
+  }
+}

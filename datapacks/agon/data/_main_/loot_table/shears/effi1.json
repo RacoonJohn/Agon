@@ -1,0 +1,15 @@
+{
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "loot_table",
+            "value": "_main_:shears/basic",
+            "modifier": [{
+                "type": "set_enchantments",
+                "enchantments": {
+                    "efficiency": 3
+                }
+            }]
+        }]
+    }]
+}

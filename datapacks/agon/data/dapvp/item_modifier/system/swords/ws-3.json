@@ -1,0 +1,32 @@
+{
+    "type":"sequence",
+    "functions":[{
+        "type": "set_attributes",
+        "modifiers": [
+            {"id":"minecraft:base_attack_knockback","amount": 0.1,"attribute": "attack_knockback","operation": "add_value","slot": "mainhand"}
+        ],
+        "replace": false
+    },
+{
+    "type": "set_components",
+    "components": {
+        "attack_animation":{
+            "type": "stab",
+            "duration": 20
+        },
+        "weapon": {
+            "disable_blocking_for_seconds": 1
+        }
+    }
+},
+{
+    "type": "set_custom_data",
+    "tag": {
+        "combo":"ws-3"
+    }
+
+}
+    ]
+}
+
+

@@ -1,0 +1,26 @@
+{
+    "type": "int_value_check",
+    "value": {
+        "type": "score",
+        "score": "teamID",
+        "target": "this"
+    },
+    "test": {
+        "max": {
+            "type": "score",
+            "score": "teamID",
+            "target": {
+                "type": "fixed",
+                "name": "#search"
+            }
+        },
+        "min": {
+            "type": "score",
+            "score": "teamID",
+            "target": {
+                "type": "fixed",
+                "name": "#search"
+            }
+        }
+    }
+}

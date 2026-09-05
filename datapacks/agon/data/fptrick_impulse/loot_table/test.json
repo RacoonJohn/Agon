@@ -1,0 +1,8 @@
+{
+    "functions": [{
+        "function": "set_components",
+        "components": {
+            "consumable": {"on_consume_effects": [{"type": "apply_effects","effects": [{"id": "absorption","amplifier": 0,"duration": 2400},{"id": "regeneration","amplifier": 1,"duration": 6000}]}]}
+        }
+    }]
+}

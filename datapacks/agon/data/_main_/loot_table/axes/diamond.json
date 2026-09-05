@@ -1,0 +1,24 @@
+{
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "loot_table",
+            "value": "dapvp:diamond_axe",
+            "modifier": [{
+                "type": "set_components",
+                "components": {
+                    "unbreakable": {}
+                }
+            },
+            {
+                "type": "set_custom_data",
+                "tag": {
+                    "_rin_":{"cant_drop":true}
+                }
+            },
+            "_main_:axe"
+            
+            ]
+        }]
+    }]
+}

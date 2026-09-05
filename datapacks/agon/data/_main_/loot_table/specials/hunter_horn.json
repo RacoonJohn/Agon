@@ -1,0 +1,10 @@
+{
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "item",
+            "name": "flow_banner_pattern",
+            "modifier": ["_main_:place_holder/hunter_horn"]
+        }]
+    }]
+}

@@ -1,0 +1,24 @@
+
+{
+    "pools":[{
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "item",
+                "name": "copper_sword"
+            }
+        ]
+    }],
+    "functions": [
+        {
+            "type": "reference",
+            "name": "dapvp:system/swords/init"
+        },
+        {
+            "type": "set_name",
+            "name": "Fast Copper Sword",
+            "entity": "this",
+            "target": "item_name"
+        }
+]
+}

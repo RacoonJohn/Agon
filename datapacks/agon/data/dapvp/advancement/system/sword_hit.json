@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "player_hit": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "weapon.mainhand": {
+                "items": "#swords",
+                "predicates": {
+                  "custom_data": {
+                    "dapvpWPN": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "dapvp:system/item/swords/combo/test"
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [{
+                "type": "item",
+                "name": "shield",
+                "modifier": [{
+                    "type": "set_components",
+                    "components": {
+                        "unbreakable": {},
+                        "tooltip_display": {"hidden_components": ["unbreakable"]}
+                    }
+                }]
+            }]
+        }
+    ]
+}

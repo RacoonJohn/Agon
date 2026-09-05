@@ -1,0 +1,31 @@
+{
+    "type":"sequence",
+    "functions": [{
+    "type": "set_components",
+    "components": {
+        "use_cooldown": {"seconds": 0.5},
+        "consumable": {"animation": "none","consume_seconds": 0,"has_consume_particles": false,"sound": "item.firecharge.use"},
+        "use_remainder": {
+            "id": "flower_banner_pattern",
+            "components": {
+                        "!banner_patterns": {},
+                        "!provides_banner_patterns": {},
+                        "item_model":"fire_charge",
+                        "item_name":"Infinite Fireball",
+                        "max_stack_size":16,
+
+                        "custom_data":{"_rin_":{"cant_drop":true},"item":"fire_charge","place_holder":{"id":"inf_fire_charge","inited":false}},
+                        "!consumable": {}
+
+            }
+        }
+    }
+},
+{
+    "type": "set_custom_data",
+    "tag": {
+        "place_holder":{"inited":true}
+    }
+}]
+
+}

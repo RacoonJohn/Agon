@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "":{
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "custom_data": {
+                            "item":"menu"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "_main_:hub/player/menu"
+    }
+}

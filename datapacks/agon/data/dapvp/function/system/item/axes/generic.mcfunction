@@ -1,0 +1,32 @@
+
+execute if items entity @s container.0 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.0 dapvp:system/axes/generic
+execute if items entity @s container.1 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.1 dapvp:system/axes/generic
+execute if items entity @s container.2 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.2 dapvp:system/axes/generic
+execute if items entity @s container.3 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.3 dapvp:system/axes/generic
+execute if items entity @s container.4 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.4 dapvp:system/axes/generic
+execute if items entity @s container.5 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.5 dapvp:system/axes/generic
+execute if items entity @s container.6 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.6 dapvp:system/axes/generic
+execute if items entity @s container.7 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.7 dapvp:system/axes/generic
+execute if items entity @s container.8 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.8 dapvp:system/axes/generic
+execute if items entity @s container.9 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.9 dapvp:system/axes/generic
+execute if items entity @s container.10 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.10 dapvp:system/axes/generic
+execute if items entity @s container.11 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.11 dapvp:system/axes/generic
+execute if items entity @s container.12 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.12 dapvp:system/axes/generic
+execute if items entity @s container.13 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.13 dapvp:system/axes/generic
+execute if items entity @s container.14 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.14 dapvp:system/axes/generic
+execute if items entity @s container.15 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.15 dapvp:system/axes/generic
+execute if items entity @s container.16 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.16 dapvp:system/axes/generic
+execute if items entity @s container.17 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.17 dapvp:system/axes/generic
+execute if items entity @s container.18 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.18 dapvp:system/axes/generic
+execute if items entity @s container.19 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.19 dapvp:system/axes/generic
+execute if items entity @s container.20 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.20 dapvp:system/axes/generic
+execute if items entity @s container.21 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.21 dapvp:system/axes/generic
+execute if items entity @s container.22 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.22 dapvp:system/axes/generic
+execute if items entity @s container.23 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.23 dapvp:system/axes/generic
+execute if items entity @s container.24 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.24 dapvp:system/axes/generic
+execute if items entity @s container.25 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.25 dapvp:system/axes/generic
+execute if items entity @s container.26 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.26 dapvp:system/axes/generic
+execute if items entity @s container.27 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.27 dapvp:system/axes/generic
+execute if items entity @s container.28 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.28 dapvp:system/axes/generic
+execute if items entity @s container.29 #axes[custom_data~{dapvpWPN:true}] run item modify entity @s container.29 dapvp:system/axes/generic
+

@@ -1,0 +1,1 @@
+$item modify entity @s hotbar.4 _main_:place_holder/$(id)

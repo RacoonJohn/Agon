@@ -1,0 +1,99 @@
+{
+    "description": "Switch",
+    "anvil_cost": 1,
+    "min_cost": {"base": 0,"per_level_above_first": 0},
+    "max_cost": {"base": 0,"per_level_above_first": 0},
+    "max_level": 1,
+    "slots": ["mainhand"],
+    "weight": 1,
+    "supported_items": "#_main_:enchantable/ranged_weapon",
+    "effects": {
+    "minecraft:hit_block":[
+      {
+        "effect": {
+        	"type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "run_function",
+              "function": "_main_:games/global/enchantment/switch/hit_block"
+            }
+          ]
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "entity_type": "minecraft:arrow",
+              "entity_tags":{
+                "none_of":["_main_.enchant.arrow.used"]
+              }
+              }
+            }
+          ]
+        }
+      }],
+
+
+    "minecraft:post_attack":[
+    {
+      "affected": "victim",
+      "enchanted": "attacker",
+      "effect": {
+        "type": "minecraft:all_of",
+        "effects": [
+          {
+            "type": "run_function",
+            "function": "_main_:games/global/enchantment/switch/hit_entity/victim"
+          }
+        ]
+      },
+      "requirements": {
+        "type": "minecraft:all_of",
+        "terms": [
+          {
+            "type": "minecraft:entity_properties",
+            "entity": "direct_attacker",
+            "predicate": {
+              "entity_type": "minecraft:arrow",
+              "entity_tags":{
+                "none_of":["_main_.enchant.arrow.used"]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "affected": "attacker",
+      "enchanted": "attacker",
+      "effect": {
+        "type": "minecraft:all_of",
+        "effects": [
+          {
+            "type": "run_function",
+            "function": "_main_:games/global/enchantment/switch/hit_entity/attacker"
+          }
+        ]
+      },
+      "requirements": {
+        "type": "minecraft:all_of",
+        "terms": [
+          {
+            "type": "minecraft:entity_properties",
+            "entity": "direct_attacker",
+            "predicate": {
+              "entity_type": "minecraft:arrow",
+              "entity_tags":{
+                "none_of":["_main_.enchant.arrow.used"]
+              }
+            }
+          }
+        ]
+      }
+    }
+	]
+}
+		}

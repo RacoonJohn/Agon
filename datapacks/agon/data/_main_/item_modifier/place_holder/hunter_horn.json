@@ -1,0 +1,25 @@
+{
+    "type":"sequence",
+    "functions": [{
+    "type": "set_components",
+    "components": {
+                    "item_model":"goat_horn",
+                    "item_name":{"text": "Hunter's Horn"},
+                    "!banner_patterns":{},
+                    "!minecraft:provides_banner_patterns":{},
+                    "use_cooldown":{"seconds": 18},
+                    "consumable":{"animation": "toot_horn","consume_seconds": 0,"sound": "item.goat_horn.sound.0"},
+                    "custom_data": {
+                        "_rin_":{"cant_drop":true},
+                        "item":"hunter_horn"
+                    
+                }
+    }
+},
+{
+    "type": "set_custom_data",
+    "tag": {
+        "place_holder":{"inited":true}
+    }
+}]
+}

@@ -1,0 +1,17 @@
+{
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "item",
+            "name": "splash_potion",
+            "modifier": [{
+                "type": "set_components",
+                "components": {
+                    "potion_contents": {"custom_effects": [{"id": "nausea","amplifier": 0,"duration": 60}],"custom_name": "Nausea","custom_color": 1346062}
+                }
+            },
+            "_rin_:api/cant_drop"
+            ]
+        }]
+    }]
+}

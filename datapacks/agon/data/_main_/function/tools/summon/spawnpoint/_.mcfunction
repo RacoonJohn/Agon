@@ -1,0 +1,1 @@
+$summon marker ~ ~ ~ {data:{scores:{gameID:$(gameID),teamID:$(teamID)},name:"SpawnPoint"},Tags:["spawnPoint"],Rotation:$(Rotation)}

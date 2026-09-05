@@ -1,0 +1,47 @@
+
+
+effect clear @s
+
+
+function _main_:games/global/player/effect/get
+
+
+function _main_:games/global/player/effect/macro with storage math:data macro."absorption"
+function _main_:games/global/player/effect/macro with storage math:data macro."bad_omen"
+function _main_:games/global/player/effect/macro with storage math:data macro."blindness"
+function _main_:games/global/player/effect/macro with storage math:data macro."breath_of_the_nautilus"
+function _main_:games/global/player/effect/macro with storage math:data macro."conduit_power"
+function _main_:games/global/player/effect/macro with storage math:data macro."darkness"
+function _main_:games/global/player/effect/macro with storage math:data macro."dolphins_grace"
+function _main_:games/global/player/effect/macro with storage math:data macro."fire_resistance"
+function _main_:games/global/player/effect/macro with storage math:data macro."glowing"
+function _main_:games/global/player/effect/macro with storage math:data macro."haste"
+function _main_:games/global/player/effect/macro with storage math:data macro."health_boost"
+function _main_:games/global/player/effect/macro with storage math:data macro."hero_of_the_village"
+function _main_:games/global/player/effect/macro with storage math:data macro."hunger"
+function _main_:games/global/player/effect/macro with storage math:data macro."infested"
+function _main_:games/global/player/effect/macro with storage math:data macro."instant_damage"
+function _main_:games/global/player/effect/macro with storage math:data macro."instant_health"
+function _main_:games/global/player/effect/macro with storage math:data macro."invisibility"
+function _main_:games/global/player/effect/macro with storage math:data macro."jump_boost"
+function _main_:games/global/player/effect/macro with storage math:data macro."mining_fatigue"
+function _main_:games/global/player/effect/macro with storage math:data macro."levitation"
+function _main_:games/global/player/effect/macro with storage math:data macro."luck"
+function _main_:games/global/player/effect/macro with storage math:data macro."nausea"
+function _main_:games/global/player/effect/macro with storage math:data macro."night_vision"
+function _main_:games/global/player/effect/macro with storage math:data macro."oozing"
+function _main_:games/global/player/effect/macro with storage math:data macro."poison"
+function _main_:games/global/player/effect/macro with storage math:data macro."raid_omen"
+function _main_:games/global/player/effect/macro with storage math:data macro."regeneration"
+function _main_:games/global/player/effect/macro with storage math:data macro."resistance"
+function _main_:games/global/player/effect/macro with storage math:data macro."saturation"
+function _main_:games/global/player/effect/macro with storage math:data macro."slowness"
+function _main_:games/global/player/effect/macro with storage math:data macro."slow_falling"
+function _main_:games/global/player/effect/macro with storage math:data macro."speed"
+function _main_:games/global/player/effect/macro with storage math:data macro."strength"
+function _main_:games/global/player/effect/macro with storage math:data macro."trial_omen"
+function _main_:games/global/player/effect/macro with storage math:data macro."water_breathing"
+function _main_:games/global/player/effect/macro with storage math:data macro."weakness"
+function _main_:games/global/player/effect/macro with storage math:data macro."weaving"
+function _main_:games/global/player/effect/macro with storage math:data macro."wind_charged"
+function _main_:games/global/player/effect/macro with storage math:data macro."wither"

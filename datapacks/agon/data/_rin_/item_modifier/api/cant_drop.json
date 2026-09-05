@@ -1,0 +1,8 @@
+{
+    "type": "set_custom_data",
+    "tag": {
+        "_rin_":{
+            "cant_drop":true
+        }
+    }
+}

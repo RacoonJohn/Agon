@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "":{
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "custom_data": {
+                            "place_holder":{"id":"gap"}
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "_main_:games/global/player/items/eat_gap"
+    }
+}

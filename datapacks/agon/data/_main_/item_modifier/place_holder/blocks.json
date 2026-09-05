@@ -1,0 +1,111 @@
+{
+    "type":"sequence",
+    "functions": [{
+    "condition":
+        {
+            "type": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "teamID": 1
+            }
+        },
+    "type": "set_item",
+    "item": "orange_concrete"
+},{
+    "condition":
+        {
+            "type": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "teamID": 2
+            }
+        }
+    ,
+    "type": "set_item",
+    "item": "lime_concrete"
+},{
+    "condition":
+        {
+            "type": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "teamID": 3
+            }
+        }
+    ,
+    "type": "set_item",
+    "item": "light_blue_concrete"
+},{
+    "condition":
+        {
+            "type": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "teamID": 4
+            }
+        }
+    ,
+    "type": "set_item",
+    "item": "yellow_concrete"
+},
+
+{
+    "condition":
+        {
+            "type": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "teamID": 1
+            }
+        }
+    ,
+    "type": "set_components",
+    "components":{"item_model": "orange_concrete","item_name": {"translate": "block.minecraft.orange_concrete"}}
+},{
+    "condition":
+        {
+            "type": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "teamID": 2
+            }
+        }
+    ,
+    "type": "set_components",
+    "components":{"item_model": "lime_concrete","item_name": {"translate": "block.minecraft.lime_concrete"}}
+},{
+    "condition":
+        {
+            "type": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "teamID": 3
+            }
+        }
+    ,
+    "type": "set_components",
+    "components":{"item_model": "light_blue_concrete","item_name": {"translate": "block.minecraft.light_blue_concrete"}}
+},{
+    "condition":
+        {
+            "type": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "teamID": 4
+            }
+        }
+    ,
+    "type": "set_components",
+    "components":{"item_model": "yellow_concrete","item_name": {"translate": "block.minecraft.yellow_concrete"}}
+},
+{
+    "type": "set_custom_data",
+    "tag": {
+        "place_holder":{"inited":true}
+    }
+}]
+
+}
+
+
+

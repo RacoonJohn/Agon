@@ -1,0 +1,23 @@
+{
+    "pools":[{
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "item",
+                "name": "iron_axe"
+            }
+        ]
+    }],
+    "functions": [
+        {
+            "type": "reference",
+            "name": "dapvp:system/axes/generic"
+        },
+        {
+            "type": "set_name",
+            "name": "Fast Iron Axe",
+            "entity": "this",
+            "target": "item_name"
+        }
+    ]
+}

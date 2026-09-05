@@ -1,0 +1,27 @@
+{
+    "type":"sequence",
+    "functions": [{
+    "type": "set_item",
+    "item": "item_frame"
+},
+{
+    "type": "set_components",
+    "components":{
+        "item_model": "ladder",
+        "entity_data": {
+            "id": "item_frame",
+            "Invisible": true,
+            "Invulnerable": true,
+            "Tags":["instant_ladder","new"]
+        }
+    }
+},
+{
+    "type": "set_custom_data",
+    "tag": {
+        "place_holder":{"inited":true},
+        "item":"instant_ladder"
+    }
+}]
+
+}

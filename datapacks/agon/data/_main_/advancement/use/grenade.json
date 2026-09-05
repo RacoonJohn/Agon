@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "":{
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "custom_data": {
+                            "item":"grenade"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "_main_:games/global/cubes/grenade/use"
+    }
+}

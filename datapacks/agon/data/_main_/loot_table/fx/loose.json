@@ -1,0 +1,22 @@
+{
+  "pools": [
+    {
+      "rolls":1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "totem_of_undying",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "item_model": "skeleton_skull"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

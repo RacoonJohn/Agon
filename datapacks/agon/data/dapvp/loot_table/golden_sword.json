@@ -1,0 +1,23 @@
+{
+    "pools":[{
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "item",
+                "name": "golden_sword"
+            }
+        ]
+    }],
+    "functions": [
+        {
+            "type": "reference",
+            "name": "dapvp:system/swords/init"
+        },
+        {
+            "type": "set_name",
+            "name": "Fast Golden Sword",
+            "entity": "this",
+            "target": "item_name"
+        }
+]
+}

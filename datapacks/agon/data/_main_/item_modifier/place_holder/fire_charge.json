@@ -1,0 +1,17 @@
+{
+    "type":"sequence",
+    "functions": [{
+    "type": "set_components",
+    "components": {
+        "use_cooldown": {"seconds": 0.25},
+        "consumable": {"animation": "none","consume_seconds": 0,"has_consume_particles": false,"sound": "item.firecharge.use"}
+    }
+},
+{
+    "type": "set_custom_data",
+    "tag": {
+        "place_holder":{"inited":true}
+    }
+}]
+
+}

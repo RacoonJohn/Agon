@@ -1,0 +1,12 @@
+
+{
+    "type": "set_count",
+    "count": {
+        "type": "score",
+        "score": "rMath",
+        "target": {
+            "type": "fixed",
+            "name": "#count"
+        }
+    }
+}

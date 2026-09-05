@@ -1,0 +1,1 @@
+execute as @e[tag=credit,type=text_display] at @s run function credit:sys/tick/circular/tick

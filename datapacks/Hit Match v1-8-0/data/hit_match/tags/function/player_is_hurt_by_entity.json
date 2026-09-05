@@ -1,0 +1,6 @@
+{
+  "replace": false,
+  "values": [
+    "_main_:games/global/player/hit_match/is_hurt_by_entity"
+  ]
+}

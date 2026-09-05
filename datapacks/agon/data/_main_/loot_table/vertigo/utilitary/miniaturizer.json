@@ -1,0 +1,12 @@
+{
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "loot_table",
+            "value": "_main_:specials/miniaturizer",
+            "modifier": [
+            "_rin_:api/cant_drop"
+            ]
+        }]
+    }]
+}

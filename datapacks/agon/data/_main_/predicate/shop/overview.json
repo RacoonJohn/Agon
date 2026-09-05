@@ -1,0 +1,105 @@
+{
+    "type": "all_of",
+    "terms": [
+        {
+            "type": "float_value_check",
+            "value": {
+                "type": "storage",
+                "storage": "main:data",
+                "path": "temp.dy"
+            },
+            "test":{
+                "min": {
+                    "type": "add",
+                    "inputs":[
+                        {
+                            "type": "mul",
+                            "inputs": [
+                                0.0001,
+                                {"type": "from_int","input": {"type": "score","target": "this","score": "shop.y"}}
+                            ]
+                        },
+                        {
+                            "type": "mul",
+                            "inputs": [
+                                -0.00005,
+                                {"type": "from_int","input": {"type": "score","target": "this","score": "shop.s"}}
+                            ]
+                        }
+
+                    ]
+                },
+                
+                "max": {
+                    "type": "add",
+                    "inputs":[
+                        {
+                            "type": "mul",
+                            "inputs": [
+                                0.0001,
+                                {"type": "from_int","input": {"type": "score","target": "this","score": "shop.y"}}
+                            ]
+                        },
+                        {
+                            "type": "mul",
+                            "inputs": [
+                                0.00005,
+                                {"type": "from_int","input": {"type": "score","target": "this","score": "shop.s"}}
+                            ]
+                        }
+
+                    ]
+                }
+            }
+        },
+        {
+            "type": "float_value_check",
+            "value": {
+                "type": "storage",
+                "storage": "main:data",
+                "path": "temp.dx"
+            },
+            "test":{
+                "min": {
+                    "type": "add",
+                    "inputs":[
+                        {
+                            "type": "mul",
+                            "inputs": [
+                                0.0180,
+                                {"type": "from_int","input": {"type": "score","target": "this","score": "shop.x"}}
+                            ]
+                        },
+                        {
+                            "type":"mul",
+                            "inputs": [
+                                -57.29577951,
+                                "_main_:shop/asin"
+                            ]
+                        }
+                    ]
+                },
+                
+                "max": {
+                    "type": "add",
+                    "inputs":[
+                        {
+                            "type": "mul",
+                            "inputs": [
+                                0.0180,
+                                {"type": "from_int","input": {"type": "score","target": "this","score": "shop.x"}}
+                            ]
+                        },
+                        {
+                            "type":"mul",
+                            "inputs": [
+                                57.29577951,
+                                "_main_:shop/asin"
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

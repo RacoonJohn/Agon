@@ -1,0 +1,13 @@
+{
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "loot_table",
+            "value": "_main_:place_holder/bow",
+            "modifier": [
+                "_main_:place_holder/bow"
+            
+        ]
+    }
+        
+]}]}

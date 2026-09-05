@@ -1,0 +1,26 @@
+{
+    "type": "int_value_check",
+    "value": {
+        "type": "score",
+        "score": "menu.id",
+        "target": "this"
+    },
+    "test": {
+        "max": {
+            "type": "score",
+            "score": "menu.id",
+            "target": {
+                "type": "fixed",
+                "name": "#search"
+            }
+        },
+        "min": {
+            "type": "score",
+            "score": "menu.id",
+            "target": {
+                "type": "fixed",
+                "name": "#search"
+            }
+        }
+    }
+}

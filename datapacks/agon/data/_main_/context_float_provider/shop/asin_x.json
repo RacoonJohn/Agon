@@ -1,0 +1,12 @@
+
+
+
+
+
+{
+    "type": "mul",
+    "inputs": [
+        0.00005,
+        {"type": "from_int","input": {"type": "score","target": "this","score": "shop.s"}}
+    ]
+}

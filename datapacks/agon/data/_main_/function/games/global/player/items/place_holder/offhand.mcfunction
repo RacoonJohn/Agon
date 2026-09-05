@@ -1,0 +1,1 @@
+$item modify entity @s weapon.offhand _main_:place_holder/$(id)

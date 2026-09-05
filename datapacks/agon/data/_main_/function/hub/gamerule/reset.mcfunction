@@ -1,0 +1,22 @@
+
+gamerule fall_damage false
+gamerule natural_health_regeneration false
+gamerule block_drops false
+gamerule locator_bar true
+gamerule show_death_messages true
+
+
+gamerule max_block_modifications 2147483647
+gamerule immediate_respawn true
+gamerule keep_inventory true
+gamerule show_advancement_messages false
+gamerule ender_pearls_vanish_on_death true
+gamerule allow_entering_nether_using_portals false
+gamerule spawn_mobs false
+gamerule spawn_monsters false
+gamerule spawn_patrols false
+gamerule spawn_phantoms false
+gamerule spawn_wandering_traders false
+gamerule allow_entering_nether_using_portals false
+
+

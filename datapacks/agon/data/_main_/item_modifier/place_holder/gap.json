@@ -1,0 +1,30 @@
+{
+    "type":"sequence",
+    "functions": [{
+    "type": "set_components",
+    "components": {
+        "consumable": {
+            "on_consume_effects": [{
+                "type": "apply_effects",
+                "effects": [
+                    {
+                        "id": "instant_health",
+                        "amplifier": 10,
+                        "duration": 1,
+                        "show_icon": false,
+                        "show_particles": false,
+                        "ambient": false                                    
+                    }
+                ]
+            }]
+        },
+        "item_name": "Health Gap"
+    }
+},
+{
+    "type": "set_custom_data",
+    "tag": {
+        "place_holder":{"inited":true}
+    }
+}]
+}

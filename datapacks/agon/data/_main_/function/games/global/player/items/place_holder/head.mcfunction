@@ -1,0 +1,1 @@
+$item modify entity @s armor.head _main_:place_holder/$(id)

@@ -1,0 +1,93 @@
+{
+    "type":"sequence",
+    "functions": [
+{
+    "type": "set_components",
+    "components": {
+        "attribute_modifiers": [{"id":"base_attack_knockback","type": "attack_knockback","amount": 0.18,"operation": "add_multiplied_total","slot": "mainhand"}],
+        "attack_animation":{
+            "type": "whack"
+        },
+        "weapon": {
+            "disable_blocking_for_seconds": 1.5
+        }
+    }
+},
+{
+    "type": "set_custom_data",
+    "tag": {
+        "combo":"",
+        "dapvpWPN":true,
+        "toInit":false
+    }
+
+},
+{
+    "type": "filtered",
+    "item_filter": {
+        "items": ["wooden_axe","golden_axe"]
+    },
+    "on_pass": {
+        "type": "set_attributes",
+        "modifiers": [
+            {"slot": "mainhand","amount": 2,"attribute": "attack_damage","operation": "add_value","id": "minecraft:base_attack_damage"}
+        ]
+    }
+},
+{
+    "type": "filtered",
+    "item_filter": {
+        "items": ["stone_axe","copper_axe"]
+    },
+    "on_pass": {
+        "type": "set_attributes",
+        "modifiers": [
+            {"slot": "mainhand","amount": 3,"attribute": "attack_damage","operation": "add_value","id": "minecraft:base_attack_damage"}
+        ]
+    }
+},
+{
+    "type": "filtered",
+    "item_filter": {
+        "items": ["iron_axe"]
+    },
+    "on_pass": {
+        "type": "set_attributes",
+        "modifiers": [
+            {"slot": "mainhand","amount": 4,"attribute": "attack_damage","operation": "add_value","id": "minecraft:base_attack_damage"}
+        ]
+    }
+},
+{
+    "type": "filtered",
+    "item_filter": {
+        "items": ["diamond_axe"]
+    },
+    "on_pass": {
+        "type": "set_attributes",
+        "modifiers": [
+            {"slot": "mainhand","amount": 5,"attribute": "attack_damage","operation": "add_value","id": "minecraft:base_attack_damage"}
+        ]
+    }
+},
+{
+    "type": "filtered",
+    "item_filter": {
+        "items": ["netherite_axe"]
+    },
+    "on_pass": {
+        "type": "set_attributes",
+        "modifiers": [
+            {"slot": "mainhand","amount": 6,"attribute": "attack_damage","operation": "add_value","id": "minecraft:base_attack_damage"}
+        ]
+    }
+},
+{
+    "type": "set_attributes",
+    "modifiers": [
+        {"slot": "mainhand","id":"minecraft:base_attack_speed","attribute": "attack_speed","amount": 1.79769313486232E+308,"operation": "add_value"}
+    ],
+    "replace": false
+}]
+
+}

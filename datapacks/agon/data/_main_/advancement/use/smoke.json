@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "":{
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "custom_data": {
+                            "item":"smoke"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "_main_:games/global/cubes/smoke/use"
+    }
+}

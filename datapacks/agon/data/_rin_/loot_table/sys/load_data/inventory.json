@@ -1,0 +1,38 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:dynamic",
+          "name": "contents",
+          "functions": [{
+            "type": "set_components",
+            "components": {
+            }
+          },
+        {
+            "type": "set_count",
+            "count": 1
+        }]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:sequence",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:dirt"
+            }
+          ]
+        }
+      ],
+      "functions": [],
+      "conditions": []
+    }
+  ]
+}

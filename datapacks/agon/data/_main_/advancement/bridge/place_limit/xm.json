@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "":{
+            "trigger": "placed_block",
+            "conditions": {
+                "location":
+                    {
+                        "type": "location_check",
+                        "predicate": {
+                            "position": {
+                                "x": {
+                                    "min": -43
+                                }
+                            }
+                        }
+                    }
+                
+            }
+        }
+    },
+    "rewards": {
+        "function": "_main_:games/bridge/player/place_height"
+    }
+}
+

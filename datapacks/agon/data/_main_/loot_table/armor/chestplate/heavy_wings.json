@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [{
+                "type": "item",
+                "name": "elytra",
+                "modifier": [
+                    "_main_:armor",
+                {
+                    "type": "set_components",
+                    "components": {
+                        "item_name":"Heavy Wings",
+                        "custom_data": {"item":"heavy_wings"}
+                    }
+                }]
+            }]
+        }
+    ]
+}

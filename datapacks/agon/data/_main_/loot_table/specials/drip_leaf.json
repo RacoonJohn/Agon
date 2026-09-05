@@ -1,0 +1,21 @@
+{
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "item",
+            "name": "flower_banner_pattern",
+            "modifier": [{
+                "type": "set_components",
+                "components": {
+                    "max_stack_size": 1,
+                    "max_damage": 1000,
+                    "item_model": "big_dripleaf",
+                    "item_name": [{"text":"Hover "},{"translate": "block.minecraft.big_dripleaf"}],
+                    "custom_data": {"item":"hover_dripleaf"}
+                }
+            },
+            "_main_:disable_banner_pattern"
+            ]
+        }]
+    }]
+}

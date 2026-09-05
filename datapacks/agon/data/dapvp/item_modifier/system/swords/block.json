@@ -1,0 +1,23 @@
+{
+    "type": "set_components",
+    "components": {
+        "blocks_attacks":{
+            "damage_reductions": [{"base":0,"factor": 0.25,"horizontal_blocking_angle": 50}],
+            "item_damage": {"base": 0.01,"factor": 0.01,"threshold": 0.05}
+        }
+    },
+    "conditions": [{
+        "type": "int_value_check",
+        "value": {
+            "type": "score",
+            "score": "dapvp.settings",
+            "target": {
+                "type": "fixed",
+                "name": "#swords.canBlock"
+            }
+        },
+        "test": 1
+    }]
+}
+
+

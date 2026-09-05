@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "":{
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "custom_data": {
+                            "item":"fire_charge"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "_main_:games/global/player/items/fire_charge/main"
+    }
+}

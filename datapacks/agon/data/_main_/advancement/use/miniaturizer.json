@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "":{
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "custom_data": {
+                            "item":"miniaturizer"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "_main_:games/global/player/items/miniaturizer/use"
+    }
+}

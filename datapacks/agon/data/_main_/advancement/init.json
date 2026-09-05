@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "init":{
+            "trigger": "tick"
+        }
+    },
+    "rewards": {
+        "type": "_main_:games/global/player/init"
+    }
+}
