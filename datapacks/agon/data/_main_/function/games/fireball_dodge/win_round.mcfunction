@@ -11,8 +11,6 @@ execute if score #search teamID matches 3 run scoreboard players add #r points 1
 execute if score #search teamID matches 1 run scoreboard players add #b points 1
 
 scoreboard players operation #limit rMath = #fbdBo settings
-scoreboard players operation #limit rMath /= #2 rMath
-scoreboard players add #limit rMath 1
 
 execute if score #b points >= #limit rMath run return run function _main_:games/fireball_dodge/win
 execute if score #r points >= #limit rMath run return run function _main_:games/fireball_dodge/win

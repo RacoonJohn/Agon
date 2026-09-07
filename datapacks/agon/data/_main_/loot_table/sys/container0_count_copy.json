@@ -1,0 +1,19 @@
+{
+  "type": "entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "slots",
+          "slot_source": {
+            "type": "slot_range",
+            "source": "this",
+            "slots": "container.0"
+          },
+          "modifier": ["_main_:count_copy"]
+        }
+      ]
+    }
+  ]
+}

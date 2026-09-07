@@ -26,7 +26,7 @@
               "type": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "entity_type": "minecraft:arrow",
+                "entity_type": "#_main_:projectile",
               "entity_tags":{
                 "none_of":["_main_.enchant.arrow.used"]
               }
@@ -57,7 +57,7 @@
             "type": "minecraft:entity_properties",
             "entity": "direct_attacker",
             "predicate": {
-              "entity_type": "minecraft:arrow",
+              "entity_type": "#_main_:projectile",
               "entity_tags":{
                 "none_of":["_main_.enchant.arrow.used"]
               }
@@ -85,7 +85,7 @@
             "type": "minecraft:entity_properties",
             "entity": "direct_attacker",
             "predicate": {
-              "entity_type": "minecraft:arrow",
+              "entity_type": "#_main_:projectile",
               "entity_tags":{
                 "none_of":["_main_.enchant.arrow.used"]
               }

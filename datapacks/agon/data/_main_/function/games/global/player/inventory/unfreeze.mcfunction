@@ -4,8 +4,10 @@
 
 data get entity @s Item
 
+data remove storage math:data Inventory
 data modify storage math:data Inventory set from entity @s Inventory
 
+data remove storage math:data equipment
 data modify storage math:data equipment set from entity @s equipment
 
 tag @s add unfreeze

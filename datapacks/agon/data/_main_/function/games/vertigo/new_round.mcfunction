@@ -13,22 +13,14 @@ kill @e[type=item]
 gamemode survival @a[scores={teamID=1..}] 
 
 
+clear @a
+
 execute as @a[scores={teamID=1..}] run function _main_:games/global/player/tp_spawn
-execute as @a[scores={teamID=1..}] run function _main_:games/global/player/inventory/load
-execute as @a[scores={teamID=1..}] run function _main_:games/global/player/effect/main
 execute as @a run function _main_:games/global/player/state/reset_saturation
 execute as @a run function _main_:games/global/player/state/reset_health
 
-scoreboard players set #timer rMath 100
-execute as @a[tag=!spectate] at @s run function _main_:games/global/no_move/set
-scoreboard players set @s invulnerability_ticks 160
 
-
-#scoreboard players operation #fall_tagTimer rMath = #gametime rMath
-#scoreboard players operation #fall_tagTimer rMath += #fall_tagTimer settings
-#scoreboard players add #fall_tagTimer rMath 101
-
-
+function _main_:games/vertigo/phase/0
 
 execute as @a[predicate=_main_:search_game] run attribute @s attack_damage modifier remove cancel
 

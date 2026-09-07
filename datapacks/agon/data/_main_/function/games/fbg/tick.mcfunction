@@ -24,8 +24,6 @@ data modify storage math:data board append value ""
 
 
 scoreboard players operation #limit rMath = #fbgBo settings
-scoreboard players remove #limit rMath 1
-scoreboard players operation #limit rMath /= #4 rMath
 scoreboard players set #count rMath 0
 scoreboard players operation #limit1 rMath = #r points
 scoreboard players operation #limit2 rMath = #g points

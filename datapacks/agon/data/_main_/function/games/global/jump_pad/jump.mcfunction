@@ -12,14 +12,15 @@ scoreboard players set #dy fptrick_impulse 0
 execute store result score #dy fptrick_impulse run data get entity @s Motion[1] -10000
 
 
-execute if score #big rMath matches 1 run scoreboard players add #dy fptrick_impulse 13000
+#execute if score #big rMath matches 1 run scoreboard players add #dy fptrick_impulse 13000
 scoreboard players operation #y fptrick_impulse += #dy fptrick_impulse
 
 function fptrick_impulse:launch_global
 
 
 
-execute if score #big rMath matches 1 run attribute @s safe_fall_distance modifier add jump_pad 30 add_value
+#execute if score #big rMath matches 1 run attribute @s safe_fall_distance modifier add jump_pad 30 add_value
+execute if score #search gameID matches 8 run attribute @s safe_fall_distance modifier add jump_pad 6 add_value
 attribute @s safe_fall_distance modifier add jump_pad 12 add_value
 
 tag @s add jumpPaded

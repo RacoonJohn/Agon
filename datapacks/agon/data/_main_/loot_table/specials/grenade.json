@@ -17,9 +17,12 @@
                         "consume_seconds": 0,
                         "has_consume_particles": false
                     },
-                    "use_cooldown":{"seconds":1}
+                    "use_cooldown":{"seconds":1},
+                    "max_stack_size": 8
                 }
-            }]
+            },
+            "_main_:disable_banner_pattern"
+        ]
     }
         
 ]}]}

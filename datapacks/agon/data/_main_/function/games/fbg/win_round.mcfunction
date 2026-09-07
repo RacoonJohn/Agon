@@ -12,8 +12,6 @@ execute if score #search teamID matches 3 run scoreboard players add #b points 1
 execute if score #search teamID matches 4 run scoreboard players add #p points 1
 
 scoreboard players operation #limit rMath = #fbgBo settings
-scoreboard players operation #limit rMath /= #4 rMath
-scoreboard players add #limit rMath 1
 
 execute if score #r points >= #limit rMath run return run function _main_:games/fbg/win
 execute if score #b points >= #limit rMath run return run function _main_:games/fbg/win
@@ -25,7 +23,7 @@ execute if score #p points >= #limit rMath run return run function _main_:games/
 execute if score #search teamID matches 1 run data modify storage main str set value {text:"Red",color:"red"}
 execute if score #search teamID matches 2 run data modify storage main str set value {text:"Green",color:"green"}
 execute if score #search teamID matches 3 run data modify storage main str set value {text:"Blue",color:"blue"}
-execute if score #search teamID matches 4 run data modify storage main str set value {text:"Pink",color:"light_purple"}
+execute if score #search teamID matches 4 run data modify storage main str set value {text:"Yellow",color:"light_purple"}
 
 
 

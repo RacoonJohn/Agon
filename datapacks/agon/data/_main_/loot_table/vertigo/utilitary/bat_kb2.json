@@ -7,7 +7,6 @@
             "modifier": [{
                 "type": "set_components",
                 "components": {
-                    "unbreakable": {},
                     "enchantments": {"knockback": 2}
                 }
             },

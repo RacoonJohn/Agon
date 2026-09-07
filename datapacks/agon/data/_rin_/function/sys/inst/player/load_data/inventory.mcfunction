@@ -1,39 +1,8 @@
 
 
-
-
 data modify entity @s Items set from storage _rin_:in inv.Inventory
 
-
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.0 from entity @s container.0
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.1 from entity @s container.1
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.2 from entity @s container.2
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.3 from entity @s container.3
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.4 from entity @s container.4
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.5 from entity @s container.5
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.6 from entity @s container.6
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.7 from entity @s container.7
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.8 from entity @s container.8
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.9 from entity @s container.9
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.10 from entity @s container.10
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.11 from entity @s container.11
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.12 from entity @s container.12
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.13 from entity @s container.13
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.14 from entity @s container.14
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.15 from entity @s container.15
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.16 from entity @s container.16
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.17 from entity @s container.17
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.18 from entity @s container.18
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.19 from entity @s container.19
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.20 from entity @s container.20
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.21 from entity @s container.21
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.22 from entity @s container.22
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.23 from entity @s container.23
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.24 from entity @s container.24
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.25 from entity @s container.25
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.26 from entity @s container.26
-
-
+item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] container.* from entity @s container.*
 
 
 data remove storage _rin_:intern items
@@ -109,31 +78,5 @@ item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] armor.body from e
 
 
 data modify entity @s Items set from storage _rin_:in inv.EnderItems
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.0 from entity @s container.0
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.1 from entity @s container.1
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.2 from entity @s container.2
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.3 from entity @s container.3
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.4 from entity @s container.4
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.5 from entity @s container.5
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.6 from entity @s container.6
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.7 from entity @s container.7
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.8 from entity @s container.8
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.9 from entity @s container.9
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.10 from entity @s container.10
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.11 from entity @s container.11
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.12 from entity @s container.12
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.13 from entity @s container.13
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.14 from entity @s container.14
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.15 from entity @s container.15
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.16 from entity @s container.16
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.17 from entity @s container.17
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.18 from entity @s container.18
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.19 from entity @s container.19
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.20 from entity @s container.20
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.21 from entity @s container.21
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.22 from entity @s container.22
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.23 from entity @s container.23
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.24 from entity @s container.24
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.25 from entity @s container.25
-item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.26 from entity @s container.26
+item replace entity @a[tag=_rin_sys_this,limit=1,distance=..1] enderchest.* from entity @s container.*
 

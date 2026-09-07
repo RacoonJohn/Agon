@@ -33,8 +33,6 @@ function _main_:games/global/display/gametime
 data modify storage math:data board append value ""
 
 scoreboard players operation #limit rMath = #bridgeBo settings
-scoreboard players remove #limit rMath 1
-scoreboard players operation #limit rMath /= #2 rMath
 scoreboard players set #count rMath 0
 scoreboard players operation #limit1 rMath = #r points
 scoreboard players operation #limit3 rMath = #b points

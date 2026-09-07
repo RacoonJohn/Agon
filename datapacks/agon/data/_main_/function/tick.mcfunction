@@ -47,6 +47,7 @@ execute if entity @a[scores={gameID=4}] run function _main_:games/fbg/tick
 execute if entity @a[scores={gameID=5}] run function _main_:games/fireball_dodge/tick
 execute if entity @a[scores={gameID=6}] run function _main_:games/pvpkit/tick
 execute if entity @a[scores={gameID=7}] run function _main_:games/tower/tick
+execute if entity @a[scores={gameID=8}] run function _main_:games/vertigo/tick
 
 execute as @a run function _main_:games/global/player/tick
 
@@ -56,6 +57,9 @@ execute as @e[type=item_display,tag=jumpPad] at @s run function _main_:games/glo
 execute as @e[type=item_display,tag=fireball] at @s run function _main_:games/global/player/items/fire_charge/tick
 
 execute as @e[type=interaction,tag=anchorBoost] at @s run function _main_:games/global/anchor_boost/tick
+
+execute as @e[type=marker,tag=elevator.up] at @s run function _main_:games/global/elevator/tick_up
+execute as @e[type=marker,tag=elevator.down] at @s run function _main_:games/global/elevator/tick_down
 
 
 #execute as @a[tag=inMenu,predicate=_main_:move] run function _main_:menu/close
@@ -72,3 +76,7 @@ kill @e[type=block_display,tag=boxHelp,tag=_rin_sys_cloned]
 scoreboard players reset @a jump
 tag @a remove warn
 
+#tag @a[tag=hit.direct] add hit.register
+#tag @a[tag=hit.register] remove hit.direct
+#tag @a[tag=hit.register] remove hit.register
+tag @a remove hit.direct

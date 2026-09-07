@@ -7,8 +7,8 @@
             "modifier": [{
                 "type": "set_components",
                 "components": {
-                    "unbreakable": {},
-                    "enchantments": {"_main_:switch": 1}
+                    "enchantments": {"_main_:switch": 1},
+                    "max_damage": 5
                 }
             },
             "_rin_:api/cant_drop"

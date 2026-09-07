@@ -13,7 +13,7 @@ function _main_:games/global/game_count/round
 execute if score #search teamID matches 1 run data modify storage main str set value {text:"Red",color:"red"}
 execute if score #search teamID matches 2 run data modify storage main str set value {text:"Green",color:"green"}
 execute if score #search teamID matches 3 run data modify storage main str set value {text:"Blue",color:"blue"}
-execute if score #search teamID matches 4 run data modify storage main str set value {text:"Pink",color:"light_purple"}
+execute if score #search teamID matches 4 run data modify storage main str set value {text:"Yellow",color:"light_purple"}
 
 
 
@@ -28,8 +28,6 @@ scoreboard players operation #search teamID = @s teamID
 function _main_:games/global/gametime/pause
 
 scoreboard players operation #limit rMath = #pvpkitBo settings
-scoreboard players operation #limit rMath /= #4 rMath
-scoreboard players add #limit rMath 1
 
 execute if score #r points >= #limit rMath run return run function _main_:games/pvpkit/win
 execute if score #g points >= #limit rMath run return run function _main_:games/pvpkit/win

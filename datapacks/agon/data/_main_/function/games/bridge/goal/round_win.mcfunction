@@ -29,8 +29,6 @@ schedule function _main_:games/global/gametime/resume 101t append
 
 
 scoreboard players operation #limit rMath = #bridgeBo settings
-scoreboard players operation #limit rMath /= #2 rMath
-scoreboard players add #limit rMath 1
 
 execute if score #b points >= #limit rMath run return run function _main_:games/bridge/goal/win
 execute if score #r points >= #limit rMath run return run function _main_:games/bridge/goal/win

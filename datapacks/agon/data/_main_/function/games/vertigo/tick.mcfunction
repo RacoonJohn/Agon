@@ -8,7 +8,27 @@ function _main_:games/global/preset/get_game
 tag @a[predicate=_main_:search_game] add myPlayer
 
 
-#execute as @a[tag=myPlayer] at @s run function _main_:games/vertigo/player/main
+
+scoreboard players operation #bossbar.global0.value rMath = #bossbar.global0.date rMath
+scoreboard players operation #bossbar.global0.value rMath -= gametime.current rMath
+execute store result bossbar global0 value run scoreboard players operation #bossbar.global0.value rMath += #bossbar.global0.max rMath
+
+execute if score #phase rMath matches 2 if score #bossbar.global0.value rMath matches ..0 run function _main_:games/vertigo/phase/3
+execute if score #phase rMath matches 1 if score #bossbar.global0.value rMath matches ..0 run function _main_:games/vertigo/phase/2
+execute if score #phase rMath matches 0 if score #bossbar.global0.value rMath matches ..0 run function _main_:games/vertigo/phase/1
+
+scoreboard players set #search teamID 1
+execute if score #end rMath matches 0 if entity @a[predicate=_main_:search_team] unless entity @a[predicate=_main_:search_team,tag=!vertigo.complete] run function _main_:games/vertigo/win_round
+scoreboard players set #search teamID 2
+execute if score #end rMath matches 0 if entity @a[predicate=_main_:search_team] unless entity @a[predicate=_main_:search_team,tag=!vertigo.complete] run function _main_:games/vertigo/win_round
+scoreboard players set #search teamID 3
+execute if score #end rMath matches 0 if entity @a[predicate=_main_:search_team] unless entity @a[predicate=_main_:search_team,tag=!vertigo.complete] run function _main_:games/vertigo/win_round
+scoreboard players set #search teamID 4
+execute if score #end rMath matches 0 if entity @a[predicate=_main_:search_team] unless entity @a[predicate=_main_:search_team,tag=!vertigo.complete] run function _main_:games/vertigo/win_round
+
+
+execute as @a[tag=myPlayer] at @s run function _main_:games/vertigo/player/main
+
 
 
 scoreboard players set #dx rMath 58
@@ -26,8 +46,6 @@ function _main_:games/global/display/gametime
 data modify storage math:data board append value ""
 
 scoreboard players operation #limit rMath = #vertigoBo settings
-scoreboard players remove #limit rMath 1
-scoreboard players operation #limit rMath /= #4 rMath
 scoreboard players set #count rMath 0
 scoreboard players operation #limit1 rMath = #r points
 scoreboard players operation #limit2 rMath = #g points

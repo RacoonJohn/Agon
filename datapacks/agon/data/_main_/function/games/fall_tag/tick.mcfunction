@@ -36,8 +36,6 @@ data modify storage math:data board append from storage _rin_:intern display.tem
 data modify storage math:data board append value ""
 
 scoreboard players operation #limit rMath = #fall_tagBo settings
-scoreboard players remove #limit rMath 1
-scoreboard players operation #limit rMath /= #2 rMath
 scoreboard players set #count rMath 0
 scoreboard players operation #limit1 rMath = #r points
 scoreboard players operation #limit3 rMath = #b points

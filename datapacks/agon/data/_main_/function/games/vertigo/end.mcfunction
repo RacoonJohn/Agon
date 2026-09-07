@@ -17,12 +17,17 @@ data modify storage _rin_:in inst set value "lobby"
 scoreboard players set #search gameID 8
 
 
+execute as @a run function _main_:games/global/shop/close
 
+execute as @a run function _main_:games/vertigo/player/hide_bar
 
 execute as @a[predicate=_main_:search_game] run attribute @s max_health modifier remove block_fight
 execute as @a[predicate=_main_:search_game] run attribute @s attack_damage modifier remove cancel
 
 
+tag @a remove vertigo.objective.kill
+tag @a remove vertigo.objective.kill_melee
+tag @a remove vertigo.objective.kill_range
 
 execute as @a[predicate=_main_:search_game] run function _main_:games/global/player/return_to_lobby
  

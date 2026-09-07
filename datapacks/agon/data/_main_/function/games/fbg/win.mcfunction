@@ -7,7 +7,7 @@ tag @a[predicate=_main_:search_game] add myPlayer
 execute if score #search teamID matches 1 run data modify storage main str set value {text:"Red",color:"red"}
 execute if score #search teamID matches 2 run data modify storage main str set value {text:"Green",color:"green"}
 execute if score #search teamID matches 3 run data modify storage main str set value {text:"Blue",color:"blue"}
-execute if score #search teamID matches 4 run data modify storage main str set value {text:"Pink",color:"light_purple"}
+execute if score #search teamID matches 4 run data modify storage main str set value {text:"Yellow",color:"light_purple"}
 
 
 title @a[tag=myPlayer] subtitle [{text:"the game",color:"gold"}]

@@ -18,13 +18,18 @@ execute unless data storage _rin_:inst "stats" run function _rin_:api/inst/creat
 
 
 scoreboard objectives add settings dummy
-    execute unless score #bridgeBo settings matches 1.. run scoreboard players set #bridgeBo settings 5
+    execute unless score #bridgeBo settings matches 1.. run scoreboard players set #bridgeBo settings 3
     execute unless score #block_fightPoint settings matches 1.. run scoreboard players set #block_fightPoint settings 50
     execute unless score #fall_tagTimer settings matches 1.. run scoreboard players set #fall_tagTimer settings 1040
-    execute unless score #fall_tagBo settings matches 1.. run scoreboard players set #fall_tagBo settings 5
-    execute unless score #fbgBo settings matches 1.. run scoreboard players set #fbgBo settings 9
-    execute unless score #pvpkitBo settings matches 1.. run scoreboard players set #pvpkitBo settings 9
-    execute unless score #towerBo settings matches 1.. run scoreboard players set #towerBo settings 9
+    execute unless score #fall_tagBo settings matches 1.. run scoreboard players set #fall_tagBo settings 3
+    execute unless score #fbgBo settings matches 1.. run scoreboard players set #fbgBo settings 3
+    execute unless score #pvpkitBo settings matches 1.. run scoreboard players set #pvpkitBo settings 3
+    execute unless score #towerBo settings matches 1.. run scoreboard players set #towerBo settings 3
+    execute unless score #vertigoBo settings matches 1.. run scoreboard players set #vertigoBo settings 3
+    execute unless score #vertigo.objective.point settings matches 1.. run scoreboard players set #vertigo.objective.point settings 15
+    execute unless score #vertigo.kill.point settings matches 1.. run scoreboard players set #vertigo.kill.point settings 10
+    execute unless score #vertigo.keep.point.tick settings matches 1.. run scoreboard players set #vertigo.keep.point.tick settings 20
+    execute unless score #vertigo.loose.point settings matches 1.. run scoreboard players set #vertigo.loose.point settings 12
     
     execute unless score #gameID settings matches 1.. run scoreboard players set #gameID settings 1
     execute unless score #presetID settings matches 1.. run scoreboard players set #presetID settings 1
@@ -58,11 +63,17 @@ scoreboard objectives add gameCount dummy
 
 scoreboard objectives add shop.offerID dummy
 scoreboard objectives add shop.price dummy
+scoreboard objectives add shop.count dummy
 scoreboard objectives add shop.x dummy
 scoreboard objectives add shop.y dummy
 scoreboard objectives add shop.s dummy
 scoreboard objectives add shop.points dummy
 
+scoreboard objectives add vertigo.role dummy
+scoreboard objectives add vertigo.start dummy
+scoreboard objectives add vertigo.objective dummy
+scoreboard objectives add vertigo.completion dummy
+scoreboard objectives add vertigo.in_anchor dummy
 
 scoreboard objectives add join_game custom:leave_game
 
@@ -169,11 +180,11 @@ team modify b seeFriendlyInvisibles true
 team modify p seeFriendlyInvisibles true
 team modify s seeFriendlyInvisibles true
 
-team modify r prefix [{text:"[",color:"#FF7200"},{text:"🗡",color:"#FF7200",font:"pvp:icons"},{text:"] ",color:"#FF7200"}]
-team modify g prefix [{text:"[",color: "#589E17"},{text:"🪓",color: "#589E17",font:"pvp:icons"},{text:"] ",color: "#589E17"}]
-team modify b prefix [{text:"[",color: "#2180BA"},{text:"🛡",color: "#2180BA",font:"pvp:icons"},{text:"] ",color: "#2180BA"}]
-team modify p prefix [{text:"[",color: "#C76086"},{text:"🧪",color: "#C76086",font:"pvp:icons"},{text:"] ",color: "#C76086"}]
+team modify r prefix [{text:"[",color:"#d61a1a"},{text:"🗡",color:"#d61a1a",font:"pvp:icons"},{text:"] ",color:"#d61a1a"}]
+team modify g prefix [{text:"[",color: "#0DDB1C"},{text:"🪓",color: "#0DDB1C",font:"pvp:icons"},{text:"] ",color: "#0DDB1C"}]
+team modify b prefix [{text:"[",color: "#1287DB"},{text:"🛡",color: "#1287DB",font:"pvp:icons"},{text:"] ",color: "#1287DB"}]
+team modify p prefix [{text:"[",color: "#E6BF15"},{text:"🧪",color: "#E6BF15",font:"pvp:icons"},{text:"] ",color: "#E6BF15"}]
 team modify s prefix {text:"[☁] ",color: "#7D7D7D"}
 
 
-
+bossbar add global0 ""

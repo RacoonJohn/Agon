@@ -8,7 +8,8 @@
                 "type": "set_components",
                 "components": {
                     "unbreakable": {},
-                    "enchantments": {"_main_:binding": 1}
+                    "enchantments": {"_main_:binding": 1},
+                    "enchantment_glint_override": false
                 }
             },
             "_rin_:api/cant_drop"
