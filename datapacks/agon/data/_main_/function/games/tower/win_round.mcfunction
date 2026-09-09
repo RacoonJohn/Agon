@@ -10,11 +10,11 @@ tag @a[predicate=_main_:search_game] add myPlayer
 
 function _main_:games/global/game_count/round
 
-execute if score #search teamID matches 1 run data modify storage main str set value {text:"Red",color:"red"}
-execute if score #search teamID matches 2 run data modify storage main str set value {text:"Green",color:"green"}
-execute if score #search teamID matches 3 run data modify storage main str set value {text:"Blue",color:"blue"}
-execute if score #search teamID matches 4 run data modify storage main str set value {text:"Yellow",color:"light_purple"}
-
+execute if score #search teamID matches 1 run data modify storage _rin_:intern display.temp set value {text:"Red",color:"r"}
+execute if score #search teamID matches 2 run data modify storage _rin_:intern display.temp set value {text:"Green",color:"g"}
+execute if score #search teamID matches 3 run data modify storage _rin_:intern display.temp set value {text:"Blue",color:"b"}
+execute if score #search teamID matches 4 run data modify storage _rin_:intern display.temp set value {text:"Yellow",color:"p"}
+function _rin_:sys/style/change_color
 
 
 execute if score #search teamID matches 1 run scoreboard players add #r points 1
@@ -37,7 +37,7 @@ execute if score #p points >= #limit rMath run return run function _main_:games/
 
 
 title @a[tag=myPlayer] subtitle [{text:"the round",color:"gold"}]
-title @a[tag=myPlayer] title [{nbt:"str",storage:"main",interpret:true},{text:" won",color:"gold"}]
+title @a[tag=myPlayer] title [{nbt:"display.temp",storage:"_rin_:intern",interpret:true},{text:" won",color:"gold"}]
 
 
 

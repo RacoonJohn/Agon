@@ -21,6 +21,8 @@ data modify storage _rin_:in inst set value "lobby"
 
 
 
+execute as @a[predicate=_main_:search_game] run function _main_:games/global/no_move/remove
+
 scoreboard players set #end rMath 1
 
 execute as @a[predicate=_main_:search_game] run attribute @s attack_damage modifier remove cancel

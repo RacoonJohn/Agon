@@ -13,7 +13,7 @@ scoreboard players set #search gameID 5
 
 
 scoreboard players set #end rMath 1
-
+execute as @a[predicate=_main_:search_game] run function _main_:games/global/no_move/remove
 execute as @a[predicate=_main_:search_game] run attribute @s attack_damage modifier remove cancel
 execute as @a[predicate=_main_:search_game] run function _main_:games/global/player/return_to_lobby
 

@@ -3,7 +3,7 @@
     "functions": [{
         "type": "set_components",
         "components": {
-            "dyed_color": 16711680
+            "dyed_color": 14031386
         },
         "condition": {
             "type": "entity_scores",
@@ -14,7 +14,7 @@
     {
         "type": "set_components",
         "components": {
-            "dyed_color": 65288
+            "dyed_color": 908060
         },
         "condition": {
             "type": "entity_scores",
@@ -25,7 +25,7 @@
     {
         "type": "set_components",
         "components": {
-            "dyed_color": 1638655
+            "dyed_color": 1214427
         },
         "condition": {
             "type": "entity_scores",
@@ -36,7 +36,7 @@
     {
         "type": "set_components",
         "components": {
-            "dyed_color": 15693055
+            "dyed_color": 15122197
         },
         "condition": {
             "type": "entity_scores",

@@ -23,7 +23,7 @@ execute as @a[scores={gameID=0}] run function _main_:games/global/player/inst/sa
 function _main_:games/global/preset/get_game
 
 
-
+execute as @a[predicate=_main_:search_game] run function _main_:games/global/no_move/remove
 execute as @a run function _main_:games/global/player/state/reset_saturation
 execute as @a run function _main_:games/global/player/state/reset_health
 

@@ -1,5 +1,7 @@
 
 
+item modify entity @s armor.feet {type:"set_enchantments",enchantments:{feather_falling:3},add:false}
+
 scoreboard players operation #search _rin_global_ownerID = @s _rin_global_playerID
 
 execute at @s as @e[predicate=_main_:search_owner,tag=shop.private,type=#_main_:display] facing 983 0 1015 run rotate @s ~ 0
@@ -9,7 +11,7 @@ execute if score #phase rMath matches 1 if entity @e[predicate=_main_:search_own
 
 execute if score #phase rMath matches 2 if entity @e[predicate=_main_:search_owner,tag=shop.private,tag=vertigo.shop,type=#_main_:display] run function _main_:games/vertigo/player/phase/2
 
-execute if score #phase rMath matches 0..2 run function _main_:games/vertigo/player/show_gold
+execute if score #phase rMath matches 0..1 run function _main_:games/vertigo/player/show_gold
 
 execute if score #phase rMath matches 2 unless score @s vertigo.start matches 0 at @s positioned ~ -64 ~ if entity @s[dy=6] run function _main_:games/vertigo/player/start/0
 execute if score #phase rMath matches 2 unless score @s vertigo.start matches 1 at @s positioned ~ -38 ~ if entity @s[dy=6] run function _main_:games/vertigo/player/start/1

@@ -31,4 +31,36 @@ loot replace entity @a armor.legs loot _main_:armor/leggings/leather
 loot replace entity @a armor.feet loot _main_:armor/boots/leather
 
 
+execute as @a[predicate=_main_:search_game] run function _main_:games/global/no_move/remove
+
+scoreboard players set #search teamID 1
+execute as @a[predicate=_main_:search_team,predicate=_main_:search_game] run function _main_:games/vertigo/player/tell_gold
+scoreboard players set #search teamID 2
+execute as @a[predicate=_main_:search_team,predicate=_main_:search_game] run function _main_:games/vertigo/player/tell_gold
+scoreboard players set #search teamID 3
+execute as @a[predicate=_main_:search_team,predicate=_main_:search_game] run function _main_:games/vertigo/player/tell_gold
+scoreboard players set #search teamID 4
+execute as @a[predicate=_main_:search_team,predicate=_main_:search_game] run function _main_:games/vertigo/player/tell_gold
+
+
+scoreboard players set @e[type=item_display,tag=vertigo.rush] teamID 0
+
+item replace entity @e[type=item_display,tag=vertigo.rush] container.0 with air
+
+scoreboard players set #vertigo.rush1 rMath 0
+scoreboard players set #vertigo.rush2 rMath 0
+scoreboard players set #vertigo.rush3 rMath 0
+scoreboard players set #vertigo.rush4 rMath 0
+
+bossbar set global1 value 0
+bossbar set global2 value 0
+bossbar set global3 value 0
+bossbar set global4 value 0
+bossbar set global1 visible false
+bossbar set global2 visible false
+bossbar set global3 visible false
+bossbar set global4 visible false
+
 function _main_:games/global/gametime/pause
+
+

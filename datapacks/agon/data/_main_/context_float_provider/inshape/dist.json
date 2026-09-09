@@ -1,0 +1,50 @@
+{
+    "type": "sqrt",
+    "input": 
+        {
+        "type": "add",
+        "inputs": [
+            {
+                "type": "pow",
+                "base": {
+                    "type": "sub",
+                    "left": "_main_:inshape/x",
+                    "right": {
+                        "type": "storage",
+                        "storage": "math:data",
+                        "path": "in.pos[0]"
+                    }
+                },
+                "exponent": 2
+            },
+            {
+                "type": "pow",
+                "base": {
+                    "type": "sub",
+                    "left": "_main_:inshape/y",
+                    "right": {
+                        "type": "storage",
+                        "storage": "math:data",
+                        "path": "in.pos[1]"
+                    }
+                },
+                "exponent": 2
+            },
+            {
+                "type": "pow",
+                "base": {
+                    "type": "sub",
+                    "left": "_main_:inshape/z",
+                    "right": {
+                        "type": "storage",
+                        "storage": "math:data",
+                        "path": "in.pos[2]"
+                    }
+                },
+                "exponent": 2
+            }
+        ]
+    }
+
+}
+

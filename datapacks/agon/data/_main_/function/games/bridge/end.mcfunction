@@ -12,6 +12,7 @@ scoreboard players set #dz rMath 42
 execute positioned 985 -64 1011 run function _main_:games/global/warn_zone/main
 
 
+execute as @a[predicate=_main_:search_game] run function _main_:games/global/no_move/remove
 
 data modify storage _rin_:in inst set value "lobby"
 

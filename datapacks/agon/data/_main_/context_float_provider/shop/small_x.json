@@ -1,0 +1,14 @@
+{
+    "type": "sqrt",
+    "input": {
+        "type": "mul",
+        "inputs": [
+            0.5,
+            {
+                "type": "sub",
+                "left": 1,
+                "right": {"type": "abs","input": "_main_:shop/asin_x"}
+            }
+        ]
+    }
+}

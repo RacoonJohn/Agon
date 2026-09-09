@@ -10,5 +10,6 @@ execute if score #is_direct rMath matches 1 run scoreboard players add @s[tag=ve
 
 scoreboard players operation @s[scores={gameID=8}] shop.points += #vertigo.kill.point settings
 
-
 execute if entity @s[scores={gameID=8}] run function _main_:games/vertigo/player/show_gold
+
+execute if entity @s[scores={gameID=8}] run effect give @s instant_health 1 1 true

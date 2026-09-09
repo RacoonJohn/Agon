@@ -12,7 +12,7 @@ function _main_:games/pvpkit/reset_map
 kill @e[type=item]
 gamemode survival @a[scores={teamID=1..}] 
 
-
+execute as @a[predicate=_main_:search_game] run function _main_:games/global/no_move/remove
 execute as @a[scores={teamID=1..}] run function _main_:games/global/player/tp_spawn
 execute as @a[scores={teamID=1..}] run function _main_:games/global/player/inventory/load
 execute as @a[scores={teamID=1..}] run function _main_:games/global/player/effect/main

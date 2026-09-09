@@ -23,3 +23,6 @@ execute unless entity @s[tag=warn] run scoreboard players set @s warnTime 0
 
 
 execute if score @s join_game matches 1.. run function _main_:games/global/player/check_game
+
+
+clear @s[scores={stats.round.death=1..}] *[custom_data~{death_delete:true}]

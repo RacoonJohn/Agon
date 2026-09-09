@@ -3,6 +3,10 @@ scoreboard players operation #search gameID = @s gameID
 
 ride @a[limit=1,predicate=_main_:search_game,predicate=_main_:search_id] mount @s
 
+attribute @a[limit=1,predicate=_main_:search_game,predicate=_main_:search_id] entity_interaction_range modifier add cancel -10000 add_value
+attribute @a[limit=1,predicate=_main_:search_game,predicate=_main_:search_id] block_interaction_range modifier add cancel -100000 add_value
+attribute @a[limit=1,predicate=_main_:search_game,predicate=_main_:search_id] attack_damage modifier add cancel -100000 add_value
+
 
 scoreboard players operation #temp rMath = @s date
 scoreboard players operation #temp rMath -= #gametime rMath
@@ -21,6 +25,12 @@ execute if score #temp rMath matches 59 run data modify storage _rin_:intern dis
 execute if score #temp rMath matches 39 run data modify storage _rin_:intern display.temp.text set value "2"
 execute if score #temp rMath matches 19 run data modify storage _rin_:intern display.temp.text set value "1"
 execute if score #temp rMath matches ..0 run data modify storage _rin_:intern display.temp.text set value ""
+
+
+execute if score #temp rMath matches ..0 run attribute @a[limit=1,predicate=_main_:search_game,predicate=_main_:search_id] entity_interaction_range modifier remove cancel
+execute if score #temp rMath matches ..0 run attribute @a[limit=1,predicate=_main_:search_game,predicate=_main_:search_id] block_interaction_range modifier remove cancel
+execute if score #temp rMath matches ..0 run attribute @a[limit=1,predicate=_main_:search_game,predicate=_main_:search_id] attack_damage modifier remove cancel
+
 
 function _rin_:sys/style/change_color
 

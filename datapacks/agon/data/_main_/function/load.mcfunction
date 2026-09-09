@@ -30,6 +30,7 @@ scoreboard objectives add settings dummy
     execute unless score #vertigo.kill.point settings matches 1.. run scoreboard players set #vertigo.kill.point settings 10
     execute unless score #vertigo.keep.point.tick settings matches 1.. run scoreboard players set #vertigo.keep.point.tick settings 20
     execute unless score #vertigo.loose.point settings matches 1.. run scoreboard players set #vertigo.loose.point settings 12
+    execute unless score #vertigo.rush settings matches 1.. run scoreboard players set #vertigo.rush settings 160
     
     execute unless score #gameID settings matches 1.. run scoreboard players set #gameID settings 1
     execute unless score #presetID settings matches 1.. run scoreboard players set #presetID settings 1
@@ -159,7 +160,7 @@ team add s
 team modify r color red
 team modify g color green
 team modify b color blue
-team modify p color light_purple
+team modify p color yellow
 team modify s color gray
 
 team modify r collisionRule pushOtherTeams
@@ -188,3 +189,8 @@ team modify s prefix {text:"[☁] ",color: "#7D7D7D"}
 
 
 bossbar add global0 ""
+bossbar add global1 ""
+bossbar add global2 ""
+bossbar add global3 ""
+bossbar add global4 ""
+

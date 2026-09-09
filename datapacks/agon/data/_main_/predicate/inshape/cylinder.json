@@ -1,0 +1,50 @@
+
+{
+    "type": "all_of",
+    "terms": [
+        {
+            "type": "float_value_check",
+            "value": "_main_:inshape/y",
+            "test": {
+                "min": {
+                    "type": "add",
+                    "inputs":[
+                        {
+                            "type": "storage",
+                            "storage":"math:data",
+                            "path": "in.pos[1]"
+                        },
+                        -0.0001
+                    ]
+                },
+                "max": {
+                    "type": "add",
+                    "inputs":[
+                        {
+                            "type": "storage",
+                            "storage":"math:data",
+                            "path": "in.pos[1]"
+                        },
+                        {
+                            "type": "storage",
+                            "storage":"math:data",
+                            "path": "in.height"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "type": "float_value_check",
+            "value": "_main_:inshape/dist_xz",
+            "test": {
+                "max": 
+                {
+                    "type": "storage",
+                    "storage":"math:data",
+                    "path": "in.radius"
+                }
+            }
+        }
+    ]
+}

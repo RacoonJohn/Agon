@@ -16,6 +16,7 @@ scoreboard players set #search gameID 2
 
 
 
+execute as @a[predicate=_main_:search_game] run function _main_:games/global/no_move/remove
 
 execute as @a[predicate=_main_:search_game] run attribute @s max_health modifier remove block_fight
 execute as @a[predicate=_main_:search_game] run attribute @s attack_damage modifier remove cancel

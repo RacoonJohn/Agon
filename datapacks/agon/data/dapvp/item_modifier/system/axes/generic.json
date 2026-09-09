@@ -10,7 +10,8 @@
         },
         "weapon": {
             "disable_blocking_for_seconds": 1.5
-        }
+        },
+        "!block_transformer": {}
     }
 },
 {

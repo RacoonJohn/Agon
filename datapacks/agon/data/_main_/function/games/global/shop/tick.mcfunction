@@ -10,11 +10,13 @@ execute at @s anchored eyes positioned ^ ^ ^ run tp @e[predicate=_main_:search_o
 
 data modify storage math:data temp.dx set from entity @s Rotation[0]
 data modify storage math:data temp.x set from entity @e[predicate=_main_:search_owner,tag=shop.private,type=#_main_:display,limit=1] Rotation[0]
-data modify storage math:data temp.dx set compute default float {type:"sub",left:{type:"storage",storage:"math:data",path:"temp.dx"},right:{type:"storage",storage:"math:data",path:"temp.x"}}
+
+data modify storage math:data temp.dx set compute default float _main_:shop/delta_x
 
 data modify storage math:data temp.dy set from entity @s Rotation[1]
 data modify storage math:data temp.dy set compute default float {type:"mul",inputs:[-0.01745329251,{type:"storage",storage:"math:data",path:"temp.dy"}]}
 data modify storage math:data temp.dy set compute default float {type:"div",left:{type:"sin",input:{type:"storage",storage:"math:data",path:"temp.dy"}},right:{type:"cos",input:{type:"storage",storage:"math:data",path:"temp.dy"}}}
+
 
 execute as @e[predicate=_main_:search_owner,tag=shop.private,type=interaction] run function _main_:games/global/shop/interaction/click
 

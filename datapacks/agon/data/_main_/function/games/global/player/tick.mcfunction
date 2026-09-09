@@ -102,3 +102,8 @@ execute if score @s death_track.date < #gametime rMath run function _main_:games
 function _main_:games/global/player/items/dripleaf/main
 
 function _main_:games/global/shop/tick
+
+scoreboard players set #break rMath 0
+execute on attacker run scoreboard players set #break rMath 1
+
+execute if score #break rMath matches 0 run tag @s remove hit.direct

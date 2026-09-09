@@ -32,13 +32,10 @@ execute store result score #gametime rMath run time query gametime
 execute store result score #gametime2 rMath run function _main_:games/global/gametime/get_time
 scoreboard players operation #gametime2 rMath /= #5 rMath
 
-kill @e[predicate=_main_:timer_end,type=item_display,tag=noMove]
 execute as @e[type=item_display,tag=noMove] at @s run function _main_:games/global/no_move/tick
-
+kill @e[predicate=_main_:timer_end,type=item_display,tag=noMove]
 
 execute if entity @a[scores={gameID=0}] run function _main_:hub/tick
-
-execute as @a[scores={death_detection=1..}] at @s run function _main_:games/global/player/hit_match/dying
 
 execute if entity @a[scores={gameID=1}] run function _main_:games/bridge/tick
 execute if entity @a[scores={gameID=2}] run function _main_:games/block_fight/tick
@@ -48,6 +45,8 @@ execute if entity @a[scores={gameID=5}] run function _main_:games/fireball_dodge
 execute if entity @a[scores={gameID=6}] run function _main_:games/pvpkit/tick
 execute if entity @a[scores={gameID=7}] run function _main_:games/tower/tick
 execute if entity @a[scores={gameID=8}] run function _main_:games/vertigo/tick
+
+execute as @a[scores={death_detection=1..}] at @s run function _main_:games/global/player/hit_match/dying
 
 execute as @a run function _main_:games/global/player/tick
 
@@ -76,7 +75,3 @@ kill @e[type=block_display,tag=boxHelp,tag=_rin_sys_cloned]
 scoreboard players reset @a jump
 tag @a remove warn
 
-#tag @a[tag=hit.direct] add hit.register
-#tag @a[tag=hit.register] remove hit.direct
-#tag @a[tag=hit.register] remove hit.register
-tag @a remove hit.direct

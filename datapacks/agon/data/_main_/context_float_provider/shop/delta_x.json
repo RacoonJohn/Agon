@@ -1,0 +1,58 @@
+
+{
+    "type": "mod",
+    "left": {
+        "type": "conditional",
+        "condition": {
+            "type": "float_value_check",
+            "value": {
+                "type": "sub",
+                "left": {"type":"storage","storage":"math:data","path":"temp.dx"},
+                "right": {"type":"storage","storage":"math:data","path":"temp.x"}
+            },
+            "test": {
+                "max": 180,
+                "min": -180
+            }
+        },
+        "on_true": {
+            "type": "sub",
+            "left": {"type":"storage","storage":"math:data","path":"temp.dx"},
+            "right": {"type":"storage","storage":"math:data","path":"temp.x"}
+        },
+        "on_false": {
+            "type": "conditional",
+            "condition": {
+                "type": "float_value_check",
+                "value": {
+                    "type": "sub",
+                    "left": {"type":"storage","storage":"math:data","path":"temp.dx"},
+                    "right": {"type":"storage","storage":"math:data","path":"temp.x"}
+                },
+                "test": {
+                    "min": 180
+                }
+            },
+            "on_true":{
+                "type": "sub",
+                "left": -360,
+                "right": {
+                    "type": "sub",
+                    "left": {"type":"storage","storage":"math:data","path":"temp.x"},
+                    "right": {"type":"storage","storage":"math:data","path":"temp.dx"}
+                }
+            },
+            "on_false":{
+                "type": "sub",
+                "left": 360,
+                "right": {
+                    "type": "sub",
+                    "left": {"type":"storage","storage":"math:data","path":"temp.x"},
+                    "right": {"type":"storage","storage":"math:data","path":"temp.dx"}
+                }
+            }
+        }
+    },
+    "right": 360
+}
+

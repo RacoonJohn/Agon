@@ -11,7 +11,8 @@
                     "max_stack_size": 3
                 }
             },
-            "_rin_:api/cant_drop"
+            "_rin_:api/cant_drop",
+            "_main_:death_delete"
             ]
         }]
     }]

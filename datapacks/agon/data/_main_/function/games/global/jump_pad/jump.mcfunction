@@ -20,8 +20,8 @@ function fptrick_impulse:launch_global
 
 
 #execute if score #big rMath matches 1 run attribute @s safe_fall_distance modifier add jump_pad 30 add_value
-execute if score #search gameID matches 8 run attribute @s safe_fall_distance modifier add jump_pad 6 add_value
-attribute @s safe_fall_distance modifier add jump_pad 12 add_value
+execute if score #search gameID matches 8 run attribute @s safe_fall_distance modifier add jump_pad 5 add_value
+attribute @s safe_fall_distance modifier add jump_pad 11 add_value
 
 tag @s add jumpPaded
 

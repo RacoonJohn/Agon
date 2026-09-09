@@ -8,7 +8,7 @@ execute if score #search teamID matches -1 run team join s
 execute if score #search teamID matches 1 at @s run particle block{block_state:"orange_concrete"} ~ ~1 ~ 0.5 1 0.5 1 25 force
 execute if score #search teamID matches 2 at @s run particle block{block_state:"lime_concrete"} ~ ~1 ~ 0.5 1 0.5 1 25 force
 execute if score #search teamID matches 3 at @s run particle block{block_state:"light_blue_concrete"} ~ ~1 ~ 0.5 1 0.5 1 25 force
-execute if score #search teamID matches 4 at @s run particle block{block_state:"pink_concrete"} ~ ~1 ~ 0.5 1 0.5 1 25 force
+execute if score #search teamID matches 4 at @s run particle block{block_state:"yellow_concrete"} ~ ~1 ~ 0.5 1 0.5 1 25 force
 execute if score #search teamID matches -1 at @s run particle block{block_state:"light_gray_concrete"} ~ ~1 ~ 0.5 1 0.5 1 25 force
 
 

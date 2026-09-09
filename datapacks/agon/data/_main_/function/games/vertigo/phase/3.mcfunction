@@ -13,4 +13,4 @@ bossbar set global0 visible false
 
 scoreboard players set #phase rMath 3
 
-function _main_:games/global/gametime/resume
+schedule function _main_:games/global/gametime/resume 60t append

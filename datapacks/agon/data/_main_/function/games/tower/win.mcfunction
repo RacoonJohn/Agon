@@ -4,7 +4,7 @@ tag @a[predicate=_main_:search_game] add myPlayer
 
 
 title @a[tag=myPlayer] subtitle [{text:"the game",color:"gold"}]
-title @a[tag=myPlayer] title [{nbt:"str",storage:"main",interpret:true},{text:" won",color:"gold"}]
+title @a[tag=myPlayer] title [{nbt:"display.temp",storage:"_rin_:intern",interpret:true},{text:" won",color:"gold"}]
 
 
 execute as @a[tag=myPlayer,predicate=_main_:search_team] run function _main_:games/global/fx/win_final

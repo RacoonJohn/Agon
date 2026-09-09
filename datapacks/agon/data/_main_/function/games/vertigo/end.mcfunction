@@ -9,6 +9,10 @@ function _main_:games/vertigo/zone
 function _rin_:api/protection/kill_from_origin
 
 
+bossbar set global1 visible false
+bossbar set global2 visible false
+bossbar set global3 visible false
+bossbar set global4 visible false
 
 
 
@@ -16,7 +20,7 @@ data modify storage _rin_:in inst set value "lobby"
 
 scoreboard players set #search gameID 8
 
-
+execute as @a[predicate=_main_:search_game] run function _main_:games/global/no_move/remove
 execute as @a run function _main_:games/global/shop/close
 
 execute as @a run function _main_:games/vertigo/player/hide_bar
@@ -32,3 +36,6 @@ tag @a remove vertigo.objective.kill_range
 execute as @a[predicate=_main_:search_game] run function _main_:games/global/player/return_to_lobby
  
 function _main_:hub/gamerule/reset
+
+
+bossbar set global0 visible false

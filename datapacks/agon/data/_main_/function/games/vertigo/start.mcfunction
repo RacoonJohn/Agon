@@ -23,6 +23,36 @@ execute as @a[scores={teamID=-1}] run function _main_:games/global/player/specta
 execute as @a[tag=spectate] run spectate @r[tag=!spectate]
 scoreboard players operation @a[tag=spectate] gameID = #search gameID
 
+
+bossbar set global1 color red
+bossbar set global2 color green
+bossbar set global3 color blue
+bossbar set global4 color yellow
+bossbar set global1 style progress
+bossbar set global2 style progress
+bossbar set global3 style progress
+bossbar set global4 style progress
+bossbar set global1 players @a
+bossbar set global2 players @a
+bossbar set global3 players @a
+bossbar set global4 players @a
+execute store result bossbar global1 max run scoreboard players get #vertigo.rush settings
+execute store result bossbar global2 max run scoreboard players get #vertigo.rush settings
+execute store result bossbar global3 max run scoreboard players get #vertigo.rush settings
+execute store result bossbar global4 max run scoreboard players get #vertigo.rush settings
+bossbar set global1 value 0
+bossbar set global2 value 0
+bossbar set global3 value 0
+bossbar set global4 value 0
+bossbar set global1 visible false
+bossbar set global2 visible false
+bossbar set global3 visible false
+bossbar set global4 visible false
+bossbar set global1 name {text:"Red Rush",color:"#d61a1a"}
+bossbar set global2 name {text:"Green Rush",color:"#0ddb1c"}
+bossbar set global3 name {text:"Blue Rush",color:"#1287db"}
+bossbar set global4 name {text:"Yellow Rush",color:"#e6bf15"}
+
 function _main_:games/vertigo/phase/0
 
 

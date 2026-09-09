@@ -1,0 +1,15 @@
+{
+    "type": "mul",
+    "inputs": [
+        1e-3,
+        {
+            "type": "from_int",
+            "input": {
+                "type": "score",
+                "target": "this",
+                "score": "posX"
+            }
+        }
+
+    ]
+}
