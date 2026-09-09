@@ -10,9 +10,8 @@ title @a[tag=myPlayer] subtitle ""
 title @a[tag=myPlayer] title [{nbt:"display.temp",storage:"_rin_:intern",interpret:true},{text:" RUSH",color:"gold"}]
 
 
-
 execute at @n[predicate=_main_:search_game,predicate=_main_:search_team,tag=_rin_sys_cloned,tag=spawn,tag=vertigo.b,type=marker] \
-    positioned ~-4 ~ ~-4 as @e[predicate=_main_:search_game,tag=vertigo.rush,sort=random,tag=_rin_sys_cloned,scores={teamID=0},limit=1,type=item_display] unless entity @s[dx=16,dy=100,dz=16] run function _main_:games/vertigo/rush/edit
+    positioned ~-8 ~ ~-8 as @e[predicate=_main_:search_game,tag=vertigo.rush,sort=random,tag=_rin_sys_cloned,scores={teamID=0},limit=1,type=item_display] unless entity @s[dx=16,dy=100,dz=16] run function _main_:games/vertigo/rush/edit
 
 execute if score #search teamID matches 1 run bossbar set global1 visible true
 execute if score #search teamID matches 2 run bossbar set global2 visible true

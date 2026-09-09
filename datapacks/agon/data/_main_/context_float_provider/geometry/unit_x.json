@@ -1,0 +1,34 @@
+
+{
+    "type": "mul",
+    "inputs": [
+        {
+            "type":"sin",
+            "input":{
+                "type":"mul",
+                "inputs":[
+                    -0.01745329252,
+                    {
+                        "type":"storage",
+                        "storage":"math:data",
+                        "path":"in.rotation[0]"
+                    }
+                ]
+            }
+        },
+        {
+            "type":"cos",
+            "input":{
+                "type":"mul",
+                "inputs":[
+                    0.01745329252,
+                    {
+                        "type":"storage",
+                        "storage":"math:data",
+                        "path":"in.rotation[1]"
+                    }
+                ]
+            }
+        }
+    ]
+}

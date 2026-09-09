@@ -8,10 +8,7 @@
             }
         ]
     }],
-    "functions": [
-        {
-            "type": "reference",
-            "name": "dapvp:system/mace/generic"
-        }
+    "modifier": [
+        "dapvp:system/mace/generic"
     ]
 }

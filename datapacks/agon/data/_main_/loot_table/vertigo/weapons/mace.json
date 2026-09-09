@@ -7,7 +7,7 @@
             "modifier": [{
                 "type": "set_components",
                 "components": {
-                    "max_damage": 10
+                    "max_damage": 4
                 }
             },
             "_rin_:api/cant_drop"

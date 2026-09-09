@@ -5,8 +5,7 @@
             "type": "loot_table",
             "value": "_main_:specials/smoke",
             "modifier": [
-            "_rin_:api/cant_drop",
-            "_main_:death_delete"
+            "_rin_:api/cant_drop"
             ]
         }]
     }]

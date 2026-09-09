@@ -5,6 +5,7 @@
         "fptrick_impulse:load",
         "buttons:load",
         "_main_:load",
-        "bs.geometry:__load__"
+        "bs.geometry:__load__",
+        "player_motion:internal/init"
     ]
 }

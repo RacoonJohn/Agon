@@ -9,11 +9,8 @@
             }
         ]
     }],
-    "functions": [
-        {
-            "type": "reference",
-            "name": "dapvp:system/swords/init"
-        },
+    "modifier": [
+        "dapvp:system/swords/generic",
         {
             "type": "set_name",
             "name": "Fast Copper Sword",

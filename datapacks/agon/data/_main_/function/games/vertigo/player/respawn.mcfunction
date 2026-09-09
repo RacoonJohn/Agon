@@ -21,4 +21,13 @@ execute at @s run function _main_:games/global/no_move/set
 scoreboard players set @s invulnerability_ticks 100
 
 
-function _main_:games/global/player/inventory/load
+execute store result score #test rMath run clear @s #arrows 0
+
+execute if items entity @s container.* bow if score #test rMath matches ..5 run give @s arrow[custom_data={"_rin_":{"cant_drop":true}}] 5
+execute if items entity @s container.* crossbow if score #test rMath matches ..5 run give @s arrow[custom_data={"_rin_":{"cant_drop":true}}] 5
+execute if items entity @s weapon.offhand bow if score #test rMath matches ..5 run give @s arrow[custom_data={"_rin_":{"cant_drop":true}}] 5
+execute if items entity @s weapon.offhand crossbow if score #test rMath matches ..5 run give @s arrow[custom_data={"_rin_":{"cant_drop":true}}] 5
+
+
+#function _main_:games/global/player/inventory/load
+

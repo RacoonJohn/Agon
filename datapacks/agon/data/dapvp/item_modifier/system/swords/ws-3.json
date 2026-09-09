@@ -12,7 +12,7 @@
     "components": {
         "attack_animation":{
             "type": "stab",
-            "duration": 20
+            "duration": 15
         },
         "weapon": {
             "disable_blocking_for_seconds": 1

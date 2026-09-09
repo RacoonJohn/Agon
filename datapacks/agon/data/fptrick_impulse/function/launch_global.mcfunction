@@ -59,6 +59,7 @@ execute if score #gamemode fptrick_impulse matches 3 run gamemode adventure
 
 item replace entity @s saddle with air
 
+
 execute unless predicate fptrick_impulse:usable_mainhand unless predicate fptrick_impulse:usable_offhand run return fail
 
 data modify storage fptrick:math this set value {item:{}}

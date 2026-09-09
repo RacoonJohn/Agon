@@ -5,7 +5,7 @@
 [{
     "type": "set_attributes",
     "modifiers": [
-        {"slot": "mainhand","id":"minecraft:base_attack_speed","attribute": "attack_speed","amount": 1.79769313486232E+308,"operation": "add_value"},
+        {"slot": "mainhand","id":"minecraft:base_attack_speed","attribute": "attack_speed","amount": 10000000000000000000000000000000,"operation": "add_value"},
         {"id":"minecraft:base_attack_knockback","amount": 0,"attribute": "attack_knockback","operation": "add_value","slot": "mainhand"}
 
     ],

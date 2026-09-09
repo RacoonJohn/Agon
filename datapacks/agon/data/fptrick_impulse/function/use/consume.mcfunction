@@ -8,6 +8,6 @@ scoreboard players set @s fptrickUseTime 0
 
 execute if entity @s[gamemode=creative] run return 1
 
-execute if predicate fptrick_impulse:usable_mainhand run return run item modify entity @s weapon.mainhand {function:"set_count","count":-1,add:true}
-item modify entity @s weapon.offhand {function:"set_count","count":-1,add:true}
+execute if predicate fptrick_impulse:usable_mainhand run return run item modify entity @s weapon.mainhand {type:"set_count","count":-1,add:true}
+item modify entity @s weapon.offhand {type:"set_count","count":-1,add:true}
 

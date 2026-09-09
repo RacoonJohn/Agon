@@ -8,11 +8,8 @@
             }
         ]
     }],
-    "functions": [
-        {
-            "type": "reference",
-            "name": "dapvp:system/axes/generic"
-        },
+    "modifier": [
+        "dapvp:system/axes/generic",
         {
             "type": "set_name",
             "name": "Fast Wooden Axe",
