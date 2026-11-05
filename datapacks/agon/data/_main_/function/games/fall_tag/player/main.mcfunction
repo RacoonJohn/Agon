@@ -12,6 +12,7 @@ execute if score @s death matches 1.. run function _main_:games/fall_tag/player/
 
 
 effect give @s resistance infinite 255 true
+effect give @s saturation infinite 255 true
 
 attribute @s block_break_speed modifier remove hunter
 execute if score @s teamID matches 1 run attribute @s block_break_speed modifier add hunter 0.2 add_value

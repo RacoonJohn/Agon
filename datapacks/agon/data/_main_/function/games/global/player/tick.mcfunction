@@ -30,6 +30,11 @@ data modify storage math:data player set from entity @s
     scoreboard players operation @s posX-1 = #Pos-1 posX
     scoreboard players operation @s posY-1 = #Pos-1 posY
     scoreboard players operation @s posZ-1 = #Pos-1 posZ
+
+    
+    scoreboard players operation @s motionX = #Motion posX
+    scoreboard players operation @s motionY = #Motion posY
+    scoreboard players operation @s motionZ = #Motion posZ
 ######################
 
 
@@ -80,7 +85,6 @@ execute if predicate _main_:flag/on_ground run attribute @s[tag=!jumpPaded.persi
 execute if predicate _main_:flag/on_ground run tag @s[tag=!jumpPaded.persist] remove jumpPaded
 tag @s remove jumpPaded.persist
 
-
 execute if score @s cancel matches 1.. run function _main_:games/global/player/cancel/main
 
 
@@ -98,6 +102,9 @@ execute if predicate _main_:flag/flying if items entity @s armor.chest *[custom_
 execute unless score @s death_track.date matches 1.. run scoreboard players set @s death_track.date 0
 execute if score @s death_track.date < #gametime rMath run function _main_:games/global/player/hit_match/death_track
 
+
+
+execute if entity @s[tag=temp_block_placed] run function _main_:games/global/player/items/temp_wools/schedule
 
 function _main_:games/global/player/items/dripleaf/main
 

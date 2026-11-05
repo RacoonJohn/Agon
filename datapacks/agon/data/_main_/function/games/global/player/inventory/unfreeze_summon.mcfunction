@@ -1,9 +1,36 @@
 #warn-off-file
 
-execute if data storage math:data equipment.offhand run data modify entity @s item set from storage math:data equipment.offhand.components."minecraft:custom_data".original
+data remove storage math:data equipment.offhand.components."minecraft:custom_data".original.count
+execute if data storage math:data equipment.offhand.components."minecraft:custom_data".original run data modify entity @s item set from storage math:data equipment.offhand.components."minecraft:custom_data".original
 data modify storage math:data count set from storage math:data equipment.offhand.count
-execute if data storage math:data equipment.offhand run item replace entity @a[tag=unfreeze] weapon.offhand from entity @s container.0
-execute if data storage math:data equipment.offhand run item modify entity @a[tag=unfreeze] container.0 _main_:count_copy
+execute if data storage math:data equipment.offhand.components."minecraft:custom_data".original run item replace entity @a[tag=unfreeze] weapon.offhand from entity @s container.0
+execute if data storage math:data equipment.offhand.components."minecraft:custom_data".original run item modify entity @a[tag=unfreeze] weapon.offhand _main_:count_copy
+
+data remove storage math:data equipment.head.components."minecraft:custom_data".original.count
+execute if data storage math:data equipment.head.components."minecraft:custom_data".original run data modify entity @s item set from storage math:data equipment.head.components."minecraft:custom_data".original
+data modify storage math:data count set from storage math:data equipment.head.count
+execute if data storage math:data equipment.head.components."minecraft:custom_data".original run item replace entity @a[tag=unfreeze] armor.head from entity @s container.0
+execute if data storage math:data equipment.head.components."minecraft:custom_data".original run item modify entity @a[tag=unfreeze] armor.head _main_:count_copy
+
+data remove storage math:data equipment.chest.components."minecraft:custom_data".original.count
+execute if data storage math:data equipment.chest.components."minecraft:custom_data".original run data modify entity @s item set from storage math:data equipment.chest.components."minecraft:custom_data".original
+data modify storage math:data count set from storage math:data equipment.chest.count
+execute if data storage math:data equipment.chest.components."minecraft:custom_data".original run item replace entity @a[tag=unfreeze] armor.chest from entity @s container.0
+execute if data storage math:data equipment.chest.components."minecraft:custom_data".original run item modify entity @a[tag=unfreeze] armor.chest _main_:count_copy
+
+data remove storage math:data equipment.legs.components."minecraft:custom_data".original.count
+execute if data storage math:data equipment.legs.components."minecraft:custom_data".original run data modify entity @s item set from storage math:data equipment.legs.components."minecraft:custom_data".original
+data modify storage math:data count set from storage math:data equipment.legs.count
+execute if data storage math:data equipment.legs.components."minecraft:custom_data".original run item replace entity @a[tag=unfreeze] armor.legs from entity @s container.0
+execute if data storage math:data equipment.legs.components."minecraft:custom_data".original run item modify entity @a[tag=unfreeze] armor.legs _main_:count_copy
+
+data remove storage math:data equipment.feet.components."minecraft:custom_data".original.count
+execute if data storage math:data equipment.feet.components."minecraft:custom_data".original run data modify entity @s item set from storage math:data equipment.feet.components."minecraft:custom_data".original
+data modify storage math:data count set from storage math:data equipment.feet.count
+execute if data storage math:data equipment.feet.components."minecraft:custom_data".original run item replace entity @a[tag=unfreeze] armor.feet from entity @s container.0
+execute if data storage math:data equipment.feet.components."minecraft:custom_data".original run item modify entity @a[tag=unfreeze] armor.feet _main_:count_copy
+
+
 
 #execute if data storage math:data equipment.head run data modify entity @s item set from storage math:data equipment.head.components."minecraft:custom_data".original
 #data modify storage math:data count set from storage math:data Inventory[{Slot:0b}].count

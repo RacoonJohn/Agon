@@ -1,5 +1,6 @@
 advancement revoke @s only dapvp:system/sword_hit
 
+return fail
 
 #function dapvp:system/item/modify/remove_dura
 

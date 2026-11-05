@@ -1,0 +1,18 @@
+{
+    "description": "Unrandomized",
+    "anvil_cost": 1,
+    "min_cost": {"base": 0,"per_level_above_first": 0},
+    "max_cost": {"base": 0,"per_level_above_first": 0},
+    "max_level": 1,
+    "slots": ["mainhand"],
+    "weight": 1,
+    "supported_items": "#_main_:enchantable/ranged_weapon",
+    "effects": {
+      "projectile_spawned": [{
+        "effect": {
+          "type": "run_function",
+          "function": "_main_:games/global/enchantment/unrandomized/spawned"
+        }
+      }]
+    }
+}

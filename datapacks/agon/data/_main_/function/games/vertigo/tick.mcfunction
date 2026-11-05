@@ -17,7 +17,7 @@ execute if score #phase rMath matches 2 if score #bossbar.global0.value rMath ma
 execute if score #phase rMath matches 1 if score #bossbar.global0.value rMath matches ..0 run function _main_:games/vertigo/phase/2
 execute if score #phase rMath matches 0 if score #bossbar.global0.value rMath matches ..0 run function _main_:games/vertigo/phase/1
 
-execute as @a[tag=myPlayer] at @s run function _main_:games/vertigo/player/main
+execute as @a[tag=myPlayer,tag=!spectate] at @s run function _main_:games/vertigo/player/main
 
 scoreboard players set #search teamID 1
 execute if score #end rMath matches 0 if entity @a[predicate=_main_:search_team] unless entity @a[predicate=_main_:search_team,tag=!vertigo.complete] unless entity @e[predicate=_main_:search_team,predicate=_main_:search_game,tag=vertigo.rush] run function _main_:games/vertigo/can_win
@@ -30,8 +30,7 @@ execute if score #end rMath matches 0 if entity @a[predicate=_main_:search_team]
 
 
 
-execute as @e[tag=vertigo.rush] at @s run rotate @s ~5 0
-execute as @e[tag=vertigo.rush,scores={teamID=1..}] run function _main_:games/vertigo/rush/tick
+execute as @e[tag=vertigo.rush,scores={teamID=1..}] at @s run function _main_:games/vertigo/rush/tick
 
 
 scoreboard players set #dx rMath 58

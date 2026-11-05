@@ -19,3 +19,4 @@ execute if items entity @s hotbar.8 *[custom_data~{place_holder:{inited:false}}]
 
 clear @s *[custom_data~{place_holder:{id:"inf_blocks"}}] 1
 clear @s *[custom_data~{place_holder:{id:"inf_wools"}}] 1
+clear @s *[custom_data~{place_holder:{id:"temp_inf_wools"}}] 1

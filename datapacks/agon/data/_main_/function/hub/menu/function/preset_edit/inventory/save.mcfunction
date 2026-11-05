@@ -4,7 +4,7 @@ tag @s remove editInv
 data modify storage math:data inv set value {}
 data modify storage math:data inv.Inventory set from entity @s Inventory
 data modify storage math:data inv.equipment set from entity @s equipment
-data modify storage math:data inv.EderItems set from entity @s EnderItems
+data modify storage math:data inv.EnderItems set from entity @s EnderItems
 
 execute if score @s menu.id matches -1 run data modify storage math:data preset_selected.inventory.inv.united set from storage math:data inv
 execute if score @s menu.id matches 0 run data modify storage math:data preset_selected.inventory.inv.team[0] set from storage math:data inv

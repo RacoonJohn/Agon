@@ -1,6 +1,9 @@
 advancement revoke @s only dapvp:system/axe_hit
 
+
 tag @s add dapvp.back_kb
+
+return fail
 
 scoreboard players set #weapon.id dapvp.math 2
 

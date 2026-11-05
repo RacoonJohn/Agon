@@ -1,0 +1,38 @@
+{
+  "type": "add",
+  "inputs": [
+    -1,
+    {
+      "type": "mul",
+      "inputs": [
+        0.799513895552,
+				{
+					"type": "add",
+					"inputs": [
+						21,
+						{"type": "mul","inputs": [25,{"type": "storage","storage": "math:data","path": "macro.value"}]},
+						{
+							"type": "div",
+							"left": {
+								"type": "mul",
+								"inputs": [
+									-446.77841552,
+									{"type": "add","inputs": [-1,"_main_:attributes/jump_coeff"]},
+									{"type": "add","inputs": ["_main_:attributes/jump_coeff",{"type": "pow","base":"_main_:attributes/jump_coeff","exponent":"_main_:ln2"}]}
+								]
+							},
+							"right": {
+								"type": "mul",
+								"inputs": [
+									2.30258509299,
+									"_main_:attributes/jump_coeff",
+									{"type": "add","inputs": [1,{"type": "pow","base":"_main_:attributes/jump_coeff","exponent":"_main_:ln2"}]}
+								]
+							}
+						}
+					]
+				}
+      ]
+    }
+  ]
+}

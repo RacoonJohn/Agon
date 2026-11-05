@@ -10,6 +10,7 @@ execute if entity @a[scores={gameID=5}] run function _main_:games/fireball_dodge
 execute if entity @a[scores={gameID=6}] run function _main_:games/pvpkit/end
 execute if entity @a[scores={gameID=7}] run function _main_:games/tower/end
 execute if entity @a[scores={gameID=8}] run function _main_:games/vertigo/end
+execute if entity @a[scores={gameID=9}] run function _main_:games/lava_floor/end
 
 scoreboard players set @a canceled 0 
 

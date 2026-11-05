@@ -6,7 +6,7 @@ tag @s add _rin_sys_ignoreClone
 tag @s add _rin_sys_cloned
 
 
-scoreboard players set @s _rin_protection_origin_X 9130
+scoreboard players set @s _rin_protection_origin_X 9110
 scoreboard players set @s _rin_protection_origin_Y -53
 scoreboard players set @s _rin_protection_origin_Z 9028
 

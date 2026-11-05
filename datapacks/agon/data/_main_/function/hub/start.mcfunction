@@ -22,6 +22,7 @@ execute as @a[scores={gameID=0}] run function _main_:games/global/player/inst/sa
 
 function _main_:games/global/preset/get_game
 
+clear @a *[custom_data~{"item":"menu"}]
 
 execute as @a[predicate=_main_:search_game] run function _main_:games/global/no_move/remove
 execute as @a run function _main_:games/global/player/state/reset_saturation
@@ -38,6 +39,8 @@ execute if score #gameID settings matches 5 run schedule function _main_:games/f
 execute if score #gameID settings matches 6 run schedule function _main_:games/pvpkit/start 10 append
 execute if score #gameID settings matches 7 run schedule function _main_:games/tower/start 10 append
 execute if score #gameID settings matches 8 run schedule function _main_:games/vertigo/start 10 append
+execute if score #gameID settings matches 9 run schedule function _main_:games/lava_floor/start 10 append
 
 execute on vehicle run function _main_:hub/menu/buttons/close
 
+ 

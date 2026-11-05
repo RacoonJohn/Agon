@@ -1,0 +1,13 @@
+{
+    "type": "add",
+    "inputs": [
+        1.10714285714,
+        {
+            "type": "mul",
+            "inputs": [
+                0.127551020408,
+                {"type": "storage","storage": "math:data","path": "macro.value"}
+            ]
+        }
+    ]
+}

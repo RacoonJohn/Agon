@@ -50,6 +50,11 @@ scoreboard objectives add dapvp.boost.armor.date dummy
 
 scoreboard objectives add dapvp.isAttacker dummy
 
+scoreboard objectives add dapvp.jump custom:jump
+
+
+execute unless data storage dapvp:math kb run data modify storage dapvp:math kb set value {mult:0.05,min:0.2}
+
 #Weapons Id:
 #   1: Swords
 #   2: Axes

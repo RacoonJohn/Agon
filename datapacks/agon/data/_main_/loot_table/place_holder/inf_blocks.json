@@ -9,7 +9,7 @@
                 "type": "set_components",
                 "components": {
                     "item_model": "white_concrete",
-                    "item_name":["Infinite ",{"translate": "block.minecraft.white_concrete"}],
+                    "item_name":["∞ ",{"translate": "block.minecraft.white_concrete"}],
                     "max_stack_size":99,
                     "!banner_patterns": {},
                     "!provides_banner_patterns":{},

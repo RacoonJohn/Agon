@@ -4,7 +4,6 @@
 {
     "type": "set_components",
     "components": {
-        "attribute_modifiers": [{"id":"base_attack_knockback","type": "attack_knockback","amount": 0.18,"operation": "add_multiplied_total","slot": "mainhand"}],
         "attack_animation":{
             "type": "whack"
         },
@@ -13,6 +12,13 @@
         },
         "!block_transformer": {}
     }
+},
+{
+    "type": "set_attributes",
+    "modifiers": [
+        {"id":"base_attack_knockback","attribute": "attack_knockback","amount": 0.3,"operation": "add_value","slot": "mainhand"}
+    ],
+    "replace": false
 },
 {
     "type": "set_custom_data",
@@ -86,9 +92,10 @@
 {
     "type": "set_attributes",
     "modifiers": [
-        {"slot": "mainhand","id":"minecraft:base_attack_speed","attribute": "attack_speed","amount": 1.79769313486232E+308,"operation": "add_value"}
+        {"slot": "mainhand","id":"minecraft:base_attack_speed","attribute": "attack_speed","amount": 4,"operation": "add_value"}
     ],
     "replace": false
-}]
+}
+]
 
 }

@@ -18,7 +18,7 @@ execute if entity @s[tag=!spawned] if items entity @s armor.* *[custom_data~{pla
 
 execute if entity @s[tag=warn] at @s run function _main_:games/global/player/warn/main
 execute unless entity @s[tag=warn] run scoreboard players set @s warnTime 0
-
+execute unless entity @s[tag=warn] run posteffect remove @s pvp:damage
 
 
 

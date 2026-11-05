@@ -15,39 +15,53 @@ data modify storage math:data menu.dx2 set value 0.24
 data modify storage math:data in set value {x:0,y:0.6,background:0,Tags:["vertigo.choose_role"],scale:0.4,type:"text",text:{text:"Choose a Role",bold:true,color:"dark_purple"},show_name:false,show_price:false}
 function _main_:games/global/shop/offer/new
 
-data modify storage math:data in merge value {x:-0.09}
+data modify storage math:data in merge value {x:-0.18}
 
 data modify storage math:data in merge value {type:"item",scale:0.25,show_name:true,show_price:false}
 data modify storage math:data in.x set compute default float {type:"add",inputs:[{type:"storage",storage:"math:data",path:"in.x"},{type:"mul",inputs:[-0.5,{type:"storage",storage:"math:data",path:"menu.dx"}]}]} 
 
 data modify storage math:data in.item set value {}
-data modify storage math:data in merge value {y:0.4,item:{id:"respawn_anchor"},name:[{text:"Anchor",color:"aqua"}],count:100000,price:0,cmd:"function _main_:games/vertigo/player/choose_role/anchor"}
+data modify storage math:data in merge value {y:0.4,item:{id:"respawn_anchor"},name:[{text:"Anchor",color:"aqua"}],count:100000,price:0,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/role/choose {id:1}"}
 function _main_:games/global/shop/offer/new
 data modify storage math:data in.item set value {}
-data modify storage math:data in merge value {y:0,item:{id:"respawn_anchor"},name:[{text:"A Anchor",color:"aqua"}],count:100000,price:0,cmd:"function _main_:games/vertigo/player/choose_role/anchor_a"}
+data modify storage math:data in merge value {y:0,item:{id:"respawn_anchor"},name:[{text:"A Anchor",color:"aqua"}],count:100000,price:0,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/role/choose {id:2}"}
 function _main_:games/global/shop/offer/new
 data modify storage math:data in.item set value {}
-data modify storage math:data in merge value {y:-0.4,item:{id:"respawn_anchor"},name:[{text:"B Anchor",color:"aqua"}],count:100000,price:0,cmd:"function _main_:games/vertigo/player/choose_role/anchor_b"}
+data modify storage math:data in merge value {y:-0.4,item:{id:"respawn_anchor"},name:[{text:"B Anchor",color:"aqua"}],count:100000,price:0,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/role/choose {id:3}"}
 function _main_:games/global/shop/offer/new
 
 data modify storage math:data in.x set compute default float {type:"add",inputs:[{type:"storage",storage:"math:data",path:"in.x"},{type:"storage",storage:"math:data",path:"menu.dx"}]}
 
 data modify storage math:data in.item set value {}
-data modify storage math:data in merge value {y:0.4,item:{id:"bow"},name:[{text:"Rifler",color:"aqua"}],count:100000,price:0,cmd:"function _main_:games/vertigo/player/choose_role/rifler"}
+data modify storage math:data in merge value {y:0.4,item:{id:"iron_axe"},name:[{text:"Reaper",color:"aqua"}],count:100000,price:0,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/role/choose {id:4}"}
 function _main_:games/global/shop/offer/new
 data modify storage math:data in.item set value {}
-data modify storage math:data in merge value {y:0,item:{id:"iron_axe"},name:[{text:"Reaper",color:"aqua"}],count:100000,price:0,cmd:"function _main_:games/vertigo/player/choose_role/reaper"}
+data modify storage math:data in merge value {y:0,item:{id:"bow"},name:[{text:"Rifler",color:"aqua"}],count:100000,price:0,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/role/choose {id:5}"}
 function _main_:games/global/shop/offer/new
 data modify storage math:data in.item set value {}
-data modify storage math:data in merge value {y:-0.4,item:{id:"iron_sword"},name:[{text:"Warrior",color:"aqua"}],count:100000,price:0,cmd:"function _main_:games/vertigo/player/choose_role/warrior"}
+data modify storage math:data in merge value {y:-0.4,item:{id:"iron_sword"},name:[{text:"Warrior",color:"aqua"}],count:100000,price:0,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/role/choose {id:6}"}
 function _main_:games/global/shop/offer/new
 
 data modify storage math:data in.x set compute default float {type:"add",inputs:[{type:"storage",storage:"math:data",path:"in.x"},{type:"storage",storage:"math:data",path:"menu.dx"}]}
 
 data modify storage math:data in.item set value {}
-data modify storage math:data in merge value {y:0.4,item:{id:"iron_boots"},name:[{text:"Climber",color:"aqua"}],count:100000,price:0,cmd:"function _main_:games/vertigo/player/choose_role/climber"}
+data modify storage math:data in merge value {y:0.4,item:{id:"iron_boots"},name:[{text:"Climber",color:"aqua"}],count:100000,price:0,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/role/choose {id:7}"}
+function _main_:games/global/shop/offer/new
+data modify storage math:data in.item set value {}
+data modify storage math:data in merge value {y:0,item:{id:"campfire"},name:[{text:"A Camper",color:"aqua"}],count:100000,price:0,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/role/choose {id:8}"}
+function _main_:games/global/shop/offer/new
+data modify storage math:data in.item set value {}
+data modify storage math:data in merge value {y:-0.4,item:{id:"soul_campfire"},name:[{text:"B Camper",color:"aqua"}],count:100000,price:0,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/role/choose {id:9}"}
 function _main_:games/global/shop/offer/new
 
+data modify storage math:data in.x set compute default float {type:"add",inputs:[{type:"storage",storage:"math:data",path:"in.x"},{type:"storage",storage:"math:data",path:"menu.dx"}]}
+
+data modify storage math:data in.item set value {}
+data modify storage math:data in merge value {y:0.4,item:{id:"elytra"},name:[{text:"Ascendant",color:"aqua"}],count:100000,price:0,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/role/choose {id:10}"}
+function _main_:games/global/shop/offer/new
+data modify storage math:data in.item set value {}
+data modify storage math:data in merge value {y:0,item:{id:"leather_chestplate"},name:[{text:"Ranger",color:"aqua"}],count:100000,price:0,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/role/choose {id:11}"}
+function _main_:games/global/shop/offer/new
 
 
 

@@ -4,6 +4,20 @@ forceload add 9000 9000 9200 9200
 
 data modify storage math:data effects set value ["absorption","bad_omen","blindness","breath_of_the_nautilus","conduit_power","darkness","dolphins_grace","fire_resistance","glowing","haste","health_boost","hero_of_the_village","hunger","infested","instant_damage","instant_health","invisibility","jump_boost","mining_fatigue","levitation","luck","nausea","night_vision","oozing","poison","raid_omen","regeneration","resistance","saturation","slowness","slow_falling","speed","strength","trial_omen","water_breathing","weakness","weaving","wind_charged","wither"]
 
+data modify storage math:data vertigo.roles set value [\
+{name:"Anchor",id:"anchor",objectives:[{type:"stay_a",value:20},{type:"stay_b",value:20},{type:"kill",value:1}]},\
+{name:"A Anchor",id:"anchor_a",objectives:[{type:"stay_a",value:30},{type:"stay_b",value:5},{type:"kill",value:1}]},\
+{name:"B Anchor",id:"anchor_b",objectives:[{type:"stay_b",value:30},{type:"stay_a",value:5},{type:"kill",value:1}]},\
+{name:"Reaper",id:"reaper",objectives:[{type:"kill",value:6},{type:"kill",value:1}]},\
+{name:"Rifler",id:"rifler",objectives:[{type:"stay_a",value:4},{type:"kill_range",value:1},{type:"kill_range",value:1},{type:"stay_b",value:4},{type:"kill_range",value:1}]},\
+{name:"Warrior",id:"warrior",objectives:[{type:"stay_b",value:4},{type:"stay_b",value:4},{type:"kill_melee",value:4}]},\
+{name:"Climber",id:"climber",objectives:[{type:"stay_b",value:2},{type:"stay_a",value:4},{type:"stay_b",value:6},{type:"stay_a",value:8},{type:"kill",value:1}]},\
+{name:"Camper A",id:"camper_a",objectives:[{type:"stay_a",value:25},{type:"stay_a",value:25}]},\
+{name:"Camper B",id:"camper_b",objectives:[{type:"stay_b",value:25},{type:"stay_b",value:25}]},\
+{name:"Ascendant",id:"ascendant",objectives:[{type:"kill",value:1},{type:"stay_b",value:12},{type:"kill",value:1},{type:"stay_a",value:12},{type:"kill",value:1}]},\
+{name:"Ranger",id:"ranger",objectives:[{type:"stay_b",value:1},{type:"kill_range",value:1},{type:"kill_melee",value:2},{type:"kill_range",value:1},{type:"stay_a",value:1}]}\
+]
+
 
 data modify storage _rin_:in inst set value "lobby"
 execute unless data storage _rin_:inst "lobby" run function _rin_:api/inst/create with storage _rin_:in inst
@@ -26,12 +40,18 @@ scoreboard objectives add settings dummy
     execute unless score #pvpkitBo settings matches 1.. run scoreboard players set #pvpkitBo settings 3
     execute unless score #towerBo settings matches 1.. run scoreboard players set #towerBo settings 3
     execute unless score #vertigoBo settings matches 1.. run scoreboard players set #vertigoBo settings 3
-    execute unless score #vertigo.objective.point settings matches 1.. run scoreboard players set #vertigo.objective.point settings 15
-    execute unless score #vertigo.kill.point settings matches 1.. run scoreboard players set #vertigo.kill.point settings 10
+    execute unless score #vertigo.objective.point settings matches 1.. run scoreboard players set #vertigo.objective.point settings 10
+    execute unless score #vertigo.kill_melee.point settings matches 1.. run scoreboard players set #vertigo.kill_melee.point settings 10
+    execute unless score #vertigo.kill_range.point settings matches 1.. run scoreboard players set #vertigo.kill_range.point settings 15
     execute unless score #vertigo.keep.point.tick settings matches 1.. run scoreboard players set #vertigo.keep.point.tick settings 20
     execute unless score #vertigo.loose.point settings matches 1.. run scoreboard players set #vertigo.loose.point settings 12
     execute unless score #vertigo.rush settings matches 1.. run scoreboard players set #vertigo.rush settings 160
-    
+    execute unless score #vertigo.phase0.time settings matches 1.. run scoreboard players set #vertigo.phase0.time settings 30000
+    execute unless score #vertigo.phase1.time settings matches 1.. run scoreboard players set #vertigo.phase1.time settings 45000
+    execute unless score #vertigo.phase2.time settings matches 1.. run scoreboard players set #vertigo.phase2.time settings 10000
+    execute unless score #lava_floorBo settings matches 1.. run scoreboard players set #lava_floorBo settings 3
+
+
     execute unless score #gameID settings matches 1.. run scoreboard players set #gameID settings 1
     execute unless score #presetID settings matches 1.. run scoreboard players set #presetID settings 1
     execute unless score #mapID settings matches 1.. run scoreboard players set #mapID settings 0
@@ -105,7 +125,8 @@ scoreboard objectives add stats.game.death dummy
 
 
 scoreboard objectives add death deathCount
-scoreboard objectives add death_detection deathCount
+scoreboard objectives remove death_detection
+scoreboard objectives add death_detection dummy
 
 scoreboard objectives add warnTime deathCount
 
@@ -142,7 +163,9 @@ scoreboard objectives add posZ-1 dummy
 scoreboard objectives add posX-2 dummy
 scoreboard objectives add posY-2 dummy
 scoreboard objectives add posZ-2 dummy
-
+scoreboard objectives add motionX dummy
+scoreboard objectives add motionY dummy
+scoreboard objectives add motionZ dummy
 
 function math:setup
 

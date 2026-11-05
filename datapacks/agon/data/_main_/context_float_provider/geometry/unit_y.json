@@ -4,7 +4,7 @@
     "input":{
         "type":"mul",
         "inputs":[
-            0.01745329252,
+            -0.01745329252,
             {
                 "type":"storage",
                 "storage":"math:data",

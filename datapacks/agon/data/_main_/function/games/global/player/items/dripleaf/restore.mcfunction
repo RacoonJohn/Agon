@@ -1,3 +1,4 @@
 
-execute if items entity @s weapon.mainhand *[custom_data~{item:"hover_dripleaf"}] run return run item modify entity @s weapon.mainhand {function:"set_damage",damage:0}
-execute if items entity @s weapon.offhand *[custom_data~{item:"hover_dripleaf"}] run return run item modify entity @s weapon.offhand {function:"set_damage",damage:0}
+item modify entity @s weapon.offhand {"type":"filtered",item_filter:{predicates:{custom_data:{item:"hover_dripleaf"}}},on_pass:{type:"set_damage",damage:0.01,add:true}}
+item modify entity @s container.* {"type":"filtered",item_filter:{predicates:{custom_data:{item:"hover_dripleaf"}}},on_pass:{type:"set_damage",damage:0.01,add:true}}
+

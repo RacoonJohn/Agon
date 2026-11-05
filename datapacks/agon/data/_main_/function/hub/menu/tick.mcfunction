@@ -1,6 +1,7 @@
 
 
 scoreboard players operation #search _rin_global_playerID = @s _rin_global_ownerID
+scoreboard players operation #search _rin_global_ownerID = @s _rin_global_ownerID
 
 scoreboard players operation #search menu.layer = @s menu.layer
 
@@ -18,8 +19,12 @@ tag @s remove sd.plane
 
 function _main_:hub/menu/choice_close
 
+execute unless data storage math:data game_selected{presetable:0b} on passengers if entity @s[tag=button,tag=presets,tag=hidden] run function _main_:hub/menu/buttons/show
+execute if data storage math:data game_selected{presetable:0b} on passengers if entity @s[tag=button,tag=presets,tag=!hidden] run function _main_:hub/menu/buttons/hide
+
+
 scoreboard players set #break rMath 0
-execute if predicate _main_:timer_end on passengers if entity @s[tag=button,tag=!selected] if predicate _main_:search_menu_layer if function _main_:hub/menu/check/coord run scoreboard players set #break rMath 1
+execute if predicate _main_:timer_end on passengers if entity @s[tag=button,tag=!hidden,tag=!selected] if predicate _main_:search_menu_layer if function _main_:hub/menu/check/coord run scoreboard players set #break rMath 1
 execute if score #break rMath matches 0 on passengers run tag @s remove select
 
 

@@ -12,6 +12,5 @@ execute as @e[type=item_display,tag=teamSelector] at @s run function _main_:hub/
 
 
 
-tellraw @s {atlas:"gui",sprite:"mob_effect/haste",object:"atlas"}
 scoreboard players reset @a death
 scoreboard players reset @a death_detection

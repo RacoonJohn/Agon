@@ -20,11 +20,51 @@ data modify storage dapvp:math Pos set from entity @s Pos
 ##################################
 
 
+attribute @s attack_knockback modifier remove dapvp:speed
+
+execute rotated ~ 0 positioned 0.0 0 0.0 positioned ^ ^ ^1 run function dapvp:system/get_pos
+
+data modify storage dapvp:math macro.l set compute default float {type:"length",inputs:[{type:"mul",inputs:[1e-3,{type:"from_int",input:{type:"score",score:"dapvp.MotionX",target:"this"}}]},{type:"mul",inputs:[1e-3,{type:"from_int",input:{type:"score",score:"dapvp.MotionZ",target:"this"}}]}]}
+
+data modify storage dapvp:math macro.x set compute default float {\
+    type:"max",\
+    inputs:[\
+        {type:"storage",storage:"dapvp:math",path:"kb.min"},\
+        {\
+            type:"mul",\
+            inputs:[\
+                {type:"storage",storage:"dapvp:math",path:"kb.mult"},\
+                {\
+                    type:"add",\
+                    inputs:[\
+                        {\
+                            type:"mul",\
+                            inputs:[\
+                                1e-3,\
+                                {type:"storage",storage:"dapvp:math",path:"Pos[0]"},\
+                                {type:"from_int",input:{type:"score",score:"dapvp.MotionX",target:"this"}}\
+                            ]\
+                        },\
+                        {\
+                            type:"mul",\
+                            inputs:[\
+                                1e-3,\
+                                {type:"storage",storage:"dapvp:math",path:"Pos[2]"},\
+                                {type:"from_int",input:{type:"score",score:"dapvp.MotionZ",target:"this"}}\
+                            ]\
+                        }\
+                    ]\
+                },\
+            ]\
+        }\
+    ]\
+}
+
+execute if items entity @s weapon.mainhand *[custom_data~{dapvpWPN:true}] run function dapvp:system/player/knockback with storage dapvp:math macro
+
 
 #attribute @s entity_interaction_range modifier remove dapvp:reach
 #execute if items entity @s weapon.mainhand *[custom_data~{nerfReach:true}] run attribute @s entity_interaction_range modifier add dapvp:reach -0.2 add_value
-
-
 
 
 execute if score @s[tag=!dapvp.force_use] dapvp.use matches 0 if items entity @s container.* *[custom_data~{dapvp_consume_temp:true}] run function dapvp:system/player/use/remove_force_use2
@@ -53,7 +93,6 @@ execute if score @s dapvp.boost.armor.date <= #gametime dapvp.math run attribute
 
 
 execute if score #gametime dapvp.math = @s dapvp.combo.generic.date run function dapvp:system/item/combo/generics
-
 execute if score #gametime dapvp.math = @s dapvp.combo.change.date run function dapvp:system/item/combo/change
 
 

@@ -1,5 +1,6 @@
 
 
+gamerule fall_damage true
 
 function _main_:games/global/game_count/game
 

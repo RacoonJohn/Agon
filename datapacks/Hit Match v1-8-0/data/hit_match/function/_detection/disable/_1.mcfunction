@@ -3,6 +3,7 @@
 # ...
 advancement grant @s only hit_match:player_hurt_entity
 advancement grant @s only hit_match:entity_hurt_player
+advancement grant @s only hit_match:entity_killed_player
 advancement grant @s only hit_match:player_interacted_with_entity
 
 # ...

@@ -1,6 +1,4 @@
 
-execute as @a on controller run say a
-
 
 forceload add 9969 9989 9977 9997
 execute positioned 10000.49 -63.00 9993.47 run forceload add ~-2 ~-2 ~2 ~2
@@ -45,6 +43,7 @@ execute if entity @a[scores={gameID=5}] run function _main_:games/fireball_dodge
 execute if entity @a[scores={gameID=6}] run function _main_:games/pvpkit/tick
 execute if entity @a[scores={gameID=7}] run function _main_:games/tower/tick
 execute if entity @a[scores={gameID=8}] run function _main_:games/vertigo/tick
+execute if entity @a[scores={gameID=9}] run function _main_:games/lava_floor/tick
 
 execute as @a[scores={death_detection=1..}] at @s run function _main_:games/global/player/hit_match/dying
 
@@ -52,6 +51,8 @@ execute as @a run function _main_:games/global/player/tick
 
 
 execute as @e[type=item_display,tag=jumpPad] at @s run function _main_:games/global/jump_pad/tick
+
+execute as @e[type=item_display,tag=boostPad] at @s run function _main_:games/global/boost_pad/tick
 
 execute as @e[type=item_display,tag=fireball] at @s run function _main_:games/global/player/items/fire_charge/tick
 
@@ -67,10 +68,37 @@ execute as @e[type=marker,tag=elevator.down] at @s run function _main_:games/glo
 execute as @e[type=item_frame,tag=cubeSpawner.shield] at @s run function _main_:games/global/cubes/shield/init
 execute as @e[type=item_frame,tag=cube.shield] at @s run function _main_:games/global/cubes/shield/tick
 
-execute as @e[type=sulfur_cube,nbt={fuse:0},tag=smoke] at @s run function _main_:games/global/cubes/smoke/explode
+execute as @e[type=marker,tag=smoke,predicate=!buttons:have_vehicle] at @s run function _main_:games/global/projectile/smoke/explode
+execute as @e[type=marker,tag=grenade,predicate=!buttons:have_vehicle] at @s run function _main_:games/global/projectile/grenade/explode
 
 kill @e[type=block_display,tag=boxHelp,tag=_rin_sys_cloned]
 
+
+scoreboard players set #temp rMath -180
+execute as @e[type=item_display,tag=temp_wools,predicate=_main_:timer/add] run data modify entity @s item.components."minecraft:custom_model_data".strings[0] set value "1"
+scoreboard players set #temp rMath -160
+execute as @e[type=item_display,tag=temp_wools,predicate=_main_:timer/add] run data modify entity @s item.components."minecraft:custom_model_data".strings[0] set value "2"
+scoreboard players set #temp rMath -140
+execute as @e[type=item_display,tag=temp_wools,predicate=_main_:timer/add] run data modify entity @s item.components."minecraft:custom_model_data".strings[0] set value "3"
+scoreboard players set #temp rMath -120
+execute as @e[type=item_display,tag=temp_wools,predicate=_main_:timer/add] run data modify entity @s item.components."minecraft:custom_model_data".strings[0] set value "4"
+scoreboard players set #temp rMath -100
+execute as @e[type=item_display,tag=temp_wools,predicate=_main_:timer/add] run data modify entity @s item.components."minecraft:custom_model_data".strings[0] set value "5"
+scoreboard players set #temp rMath -80
+execute as @e[type=item_display,tag=temp_wools,predicate=_main_:timer/add] run data modify entity @s item.components."minecraft:custom_model_data".strings[0] set value "6"
+scoreboard players set #temp rMath -60
+execute as @e[type=item_display,tag=temp_wools,predicate=_main_:timer/add] run data modify entity @s item.components."minecraft:custom_model_data".strings[0] set value "7"
+scoreboard players set #temp rMath -40
+execute as @e[type=item_display,tag=temp_wools,predicate=_main_:timer/add] run data modify entity @s item.components."minecraft:custom_model_data".strings[0] set value "8"
+scoreboard players set #temp rMath -20
+execute as @e[type=item_display,tag=temp_wools,predicate=_main_:timer/add] run data modify entity @s item.components."minecraft:custom_model_data".strings[0] set value "9"
+
+
+execute at @e[type=item_display,tag=temp_wools,predicate=_main_:timer_end] run fill ~ ~ ~ ~ ~ ~ air replace #wool
+kill @e[type=item_display,tag=temp_wools,predicate=!_main_:in_wool]
+
+
+advancement revoke @a only _main_:stepping_on/any
 
 scoreboard players reset @a jump
 tag @a remove warn

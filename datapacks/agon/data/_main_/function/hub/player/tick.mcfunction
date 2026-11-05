@@ -1,5 +1,5 @@
 
-execute positioned ~ -10 ~ if entity @s[dy=-3] run tp @s 9.0 1 9.0
+execute positioned ~ -10 ~ if entity @s[dy=-3,tag=!debug] run tp @s 9.0 1 9.0
 
 scoreboard players set #search teamID -1
 execute if score @s teamID matches 1 if score #teamR settings matches 0 run function _main_:hub/team/join

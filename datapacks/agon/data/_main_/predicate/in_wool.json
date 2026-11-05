@@ -1,0 +1,8 @@
+{
+    "type": "location_check",
+    "predicate": {
+        "block": {
+            "blocks": "#wool"
+        }
+    }
+}

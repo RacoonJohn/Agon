@@ -5,11 +5,13 @@ bossbar set global0 players @a
 bossbar set global0 visible true
 bossbar set global0 style progress
 
-scoreboard players set #bossbar.global0.max rMath 45000
+scoreboard players operation #bossbar.global0.max rMath = #vertigo.phase0.time settings
 execute store result bossbar global0 max run scoreboard players get #bossbar.global0.max rMath
 execute store result bossbar global0 value run scoreboard players get #bossbar.global0.max rMath
 scoreboard players operation #bossbar.global0.date rMath = gametime.current rMath
 
+
+kill @e[tag=rush.indicator,type=item_display]
 
 scoreboard players set #phase rMath 0
 
@@ -23,6 +25,9 @@ scoreboard players set @a vertigo.completion 0
 scoreboard players set @a vertigo.in_anchor 0
 
 execute as @a[tag=!spectate] run function _main_:games/vertigo/player/choose_role
+execute as @a[tag=!spectate] run function _main_:games/global/player/state/reset_saturation
+execute as @a[tag=!spectate] run function _main_:games/global/player/state/reset_health
+
 
 clear @a
 

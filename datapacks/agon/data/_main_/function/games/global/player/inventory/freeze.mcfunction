@@ -24,6 +24,12 @@ execute unless data storage math:data equipment.chest.macro.item_model run data 
 execute unless data storage math:data equipment.legs.macro.item_model run data modify storage math:data equipment.legs.macro.item_model set from storage math:data equipment.legs.id
 execute unless data storage math:data equipment.feet.macro.item_model run data modify storage math:data equipment.feet.macro.item_model set from storage math:data equipment.feet.id
 
+data modify storage math:data equipment.offhand.macro.id set string storage math:data equipment.offhand.id 10
+data modify storage math:data equipment.head.macro.id set string storage math:data equipment.head.id 10
+data modify storage math:data equipment.chest.macro.id set string storage math:data equipment.chest.id 10
+data modify storage math:data equipment.legs.macro.id set string storage math:data equipment.legs.id 10
+data modify storage math:data equipment.feet.macro.id set string storage math:data equipment.feet.id 10
+
 
 data modify storage math:data Inventory[{Slot:0b}].macro.original set from storage math:data Inventory[{Slot:0b}]
 data modify storage math:data Inventory[{Slot:1b}].macro.original set from storage math:data Inventory[{Slot:1b}]

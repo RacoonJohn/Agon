@@ -4,10 +4,8 @@ tag @a[predicate=_main_:search_game] add myPlayer
 
 
 
-execute if score #search teamID matches 1 run data modify storage _rin_:intern display.temp set value {text:"Red",color:"r"}
-execute if score #search teamID matches 2 run data modify storage _rin_:intern display.temp set value {text:"Green",color:"g"}
-execute if score #search teamID matches 3 run data modify storage _rin_:intern display.temp set value {text:"Blue",color:"b"}
-execute if score #search teamID matches 4 run data modify storage _rin_:intern display.temp set value {text:"Yellow",color:"p"}
+execute if score #search teamID matches 1 run data modify storage _rin_:intern display.temp set value {text:"Blue",color:"b"}
+execute if score #search teamID matches 3 run data modify storage _rin_:intern display.temp set value {text:"Red",color:"r"}
 
 function _rin_:sys/style/change_color
 

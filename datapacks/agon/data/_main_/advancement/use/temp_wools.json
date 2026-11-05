@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "FB": {
+      "trigger": "placed_block",
+      "conditions": {
+        "location":
+        {
+          "type": "minecraft:match_tool",
+          "predicate": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "item": "temp_wools"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "_main_:games/global/player/items/temp_wools/use"
+  }
+}

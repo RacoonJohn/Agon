@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "loot": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:stepping_on": {
+              "block": {
+                "blocks": "minecraft:magma_block"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "_main_:games/global/player/stepping_on/magma_block"
+  }
+}

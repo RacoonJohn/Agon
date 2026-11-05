@@ -13,12 +13,14 @@ tag @s remove spectate
 data modify storage _rin_:in inst set value "lobby"
 function _rin_:api/player/inst/load_data
 
+function _main_:games/global/player/reset_attribute
 
 effect clear @s
 attribute @s attack_damage modifier remove cancel
 attribute @s block_break_speed modifier remove hunter
 
 effect give @s saturation infinite 255 true
+posteffect clear @s
 
 #function _main_:hub/menu/close
 

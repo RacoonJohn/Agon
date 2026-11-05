@@ -5,7 +5,6 @@ execute if data storage buttons:storage temp.grid[0].slot store result storage b
 execute on passengers if entity @s[tag=!button.gui_background] if function buttons:system/tick/gui/test_slot run data modify entity @s item set from storage buttons:storage temp.grid[0]
 
 
-#say a
 
 
 

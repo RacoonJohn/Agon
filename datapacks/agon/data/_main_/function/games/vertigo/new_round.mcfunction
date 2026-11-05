@@ -10,6 +10,8 @@ function _main_:games/vertigo/reset_map
 
 
 kill @e[type=item]
+kill @e[type=arrow]
+kill @e[type=trident]
 gamemode survival @a[scores={teamID=1..}] 
 
 

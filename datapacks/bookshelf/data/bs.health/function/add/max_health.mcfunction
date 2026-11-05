@@ -1,0 +1,20 @@
+# ------------------------------------------------------------------------------------------------------------
+# Copyright (c) 2026 Gunivers
+#
+# This file is part of the Bookshelf project (https://github.com/mcbookshelf/bookshelf).
+#
+# This source code is subject to the terms of the Mozilla Public License, v. 2.0.
+# If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#
+# Conditions:
+# - You may use this file in compliance with the MPL v2.0
+# - Any modifications must be documented and disclosed under the same license
+#
+# For more details, refer to the MPL v2.0.
+# ------------------------------------------------------------------------------------------------------------
+
+# Get input points and base max_health
+execute store result storage bs:ctx z float 0.00001 run attribute @s max_health base get 100000
+
+$data modify storage bs:ctx y set compute default float {type:"minecraft:add",inputs:[$(points),{type:"minecraft:storage",storage:"bs:ctx",path:"m"}]}
+function bs.health:utils/set_max_health with storage bs:ctx

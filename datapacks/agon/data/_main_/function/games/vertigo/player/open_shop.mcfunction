@@ -3,9 +3,9 @@
 data modify storage math:data menu.dx set value 0.18
 data modify storage math:data menu.dx2 set value 0.24
 
-data modify storage math:data in set value {x:-0.42,background:0}
+data modify storage math:data in set value {x:-0.65,background:0}
 
-data modify storage math:data in merge value {x:-0.42,y:0.6,scale:0.4,Tags:["vertigo.shop"],type:"text",text:{text:"Armor",bold:true,color:"dark_purple"},show_name:false,show_price:false}
+data modify storage math:data in merge value {x:-0.65,y:0.6,scale:0.4,Tags:["vertigo.shop"],type:"text",text:{text:"Armor",bold:true,color:"dark_purple"},show_name:false,show_price:false}
 function _main_:games/global/shop/offer/new
 
 data modify storage math:data in merge value {type:"item",scale:0.25,show_name:true,show_price:true}
@@ -39,25 +39,34 @@ data modify storage math:data in.x set compute default float {type:"add",inputs:
 data modify storage math:data in merge value {type:"item",scale:0.25,show_name:true,shpw_price:true}
 
 data modify storage math:data in.item set value {}
-data modify storage math:data in merge value {y:0.4,item:{id:"stick",components:{"minecraft:enchantments":{knockback:1}}},name:"Bat Kb I",count:1,price:16,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/get_item {loot:'_main_:vertigo/utilitary/bat_kb1',type:'give @s'}"}
+data modify storage math:data in merge value {y:0.4,item:{id:"stick"},name:"Bat",count:1,price:5,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/get_item {loot:'_main_:vertigo/utilitary/bat',type:'give @s'}"}
 function _main_:games/global/shop/offer/new
 data modify storage math:data in.item set value {}
-data modify storage math:data in merge value {y:0,item:{id:"stick",components:{"minecraft:enchantments":{knockback:1}}},name:"Bat Kb II",count:1,price:25,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/get_item {loot:'_main_:vertigo/utilitary/bat_kb2',type:'give @s'}"}
+data modify storage math:data in merge value {y:0,item:{id:"stick",components:{"minecraft:enchantments":{knockback:1}}},name:"Bat Kb I",count:1,price:15,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/get_item {loot:'_main_:vertigo/utilitary/bat_kb1',type:'give @s'}"}
 function _main_:games/global/shop/offer/new
 data modify storage math:data in.item set value {}
-data modify storage math:data in merge value {y:-0.4,item:{id:"spyglass"},name:"Miniaturizer",count:3,price:9,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/get_item {loot:'_main_:vertigo/utilitary/miniaturizer',type:'give @s'}"}
+data modify storage math:data in merge value {y:-0.4,item:{id:"spyglass"},name:"Miniaturizer",count:3,price:15,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/get_item {loot:'_main_:vertigo/utilitary/miniaturizer',type:'give @s'}"}
 function _main_:games/global/shop/offer/new
 
 data modify storage math:data in.x set compute default float {type:"add",inputs:[{type:"storage",storage:"math:data",path:"in.x"},{type:"storage",storage:"math:data",path:"menu.dx"}]}
 
 data modify storage math:data in.item set value {}
-data modify storage math:data in merge value {y:0.4,item:{id:"tnt"},name:"Grenade",count:3,price:10,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/get_item {loot:'_main_:vertigo/utilitary/grenade',type:'give @s'}"}
+data modify storage math:data in merge value {y:0.4,item:{id:"tnt"},name:"Grenade",count:3,price:5,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/get_item {loot:'_main_:vertigo/utilitary/grenade',type:'give @s'}"}
 function _main_:games/global/shop/offer/new
 data modify storage math:data in.item set value {}
-data modify storage math:data in merge value {y:0,item:{id:"light_gray_bundle"},count:3,name:"Smoke",price:6,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/get_item {loot:'_main_:vertigo/utilitary/smoke',type:'give @s'}"}
+data modify storage math:data in merge value {y:0,item:{id:"light_gray_bundle"},count:3,name:"Smoke",price:3,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/get_item {loot:'_main_:vertigo/utilitary/smoke',type:'give @s'}"}
 function _main_:games/global/shop/offer/new
 data modify storage math:data in.item set value {}
-data modify storage math:data in merge value {y:-0.4,item:{id:"splash_potion",components:{"potion_contents": {"custom_effects": [{"id": "nausea","amplifier": 0,"duration": 60}],"custom_name": "Nausea","custom_color": 1346062}}},count:3,name:"Nausea Potion",price:6,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/get_item {loot:'_main_:vertigo/utilitary/nausea',type:'give @s'}"}
+data modify storage math:data in merge value {y:-0.4,item:{id:"splash_potion",components:{"potion_contents": {"custom_effects": [{"id": "nausea","amplifier": 0,"duration": 60}],"custom_name": "Nausea","custom_color": 1346062}}},count:3,name:"Nausea Potion",price:3,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/get_item {loot:'_main_:vertigo/utilitary/nausea',type:'give @s'}"}
+function _main_:games/global/shop/offer/new
+
+data modify storage math:data in.x set compute default float {type:"add",inputs:[{type:"storage",storage:"math:data",path:"in.x"},{type:"storage",storage:"math:data",path:"menu.dx"}]}
+
+data modify storage math:data in.item set value {}
+data modify storage math:data in merge value {y:0.4,item:{id:"big_dripleaf"},name:"DripLeaf",count:1,price:15,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/get_item {loot:'_main_:vertigo/utilitary/dripleaf',type:'give @s'}"}
+function _main_:games/global/shop/offer/new
+data modify storage math:data in.item set value {}
+data modify storage math:data in merge value {y:0,item:{id:"wind_charge"},name:"5 Wind Charge",count:2,price:20,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/get_item {loot:'_main_:vertigo/utilitary/wind_charge',type:'give @s'}"}
 function _main_:games/global/shop/offer/new
 
 
@@ -93,7 +102,7 @@ function _main_:games/global/shop/offer/new
 data modify storage math:data in.x set compute default float {type:"add",inputs:[{type:"storage",storage:"math:data",path:"in.x"},{type:"storage",storage:"math:data",path:"menu.dx"}]}
 
 data modify storage math:data in.item set value {}
-data modify storage math:data in merge value {y:0.4,item:{id:"crossbow",components:{"minecraft:enchantments":{"_main_:0g":1}}},name:"0G Crossbow",count:1,price:50,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/get_item {loot:'_main_:vertigo/weapons/crossbow_0g',type:'give @s'}"}
+data modify storage math:data in merge value {y:0.4,item:{id:"crossbow",components:{"minecraft:enchantments":{"_main_:0g":1}}},name:"0G Crossbow",count:1,price:25,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/get_item {loot:'_main_:vertigo/weapons/crossbow_0g',type:'give @s'}"}
 function _main_:games/global/shop/offer/new
 data modify storage math:data in.item set value {}
 data modify storage math:data in merge value {y:0,item:{id:"crossbow",components:{"minecraft:enchantments":{quick_charge:1}}},name:"Crossbow QC I",count:1,price:25,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/get_item {loot:'_main_:vertigo/weapons/crossbow_qc1',type:'give @s'}"}
@@ -108,7 +117,7 @@ data modify storage math:data in.item set value {}
 data modify storage math:data in merge value {y:0,item:{id:"mace"},name:"Mace",count:1,price:75,cmd:"execute as @p[tag=shop.owner] run function _main_:games/vertigo/player/get_item {loot:'_main_:vertigo/weapons/mace',type:'give @s'}"}
 function _main_:games/global/shop/offer/new
 
-data modify storage math:data in merge value {x:0,y:0.6,scale:0.4,type:"text",text:{text:"Utilitary",bold:true,color:"dark_purple"},show_name:false,show_price:false}
+data modify storage math:data in merge value {x:-0.15,y:0.6,scale:0.4,type:"text",text:{text:"Utilitary",bold:true,color:"dark_purple"},show_name:false,show_price:false}
 function _main_:games/global/shop/offer/new
 
 data modify storage math:data in merge value {x:0.52,y:0.6,scale:0.4,type:"text",text:{text:"Weapons",bold:true,color:"dark_purple"},show_name:false,show_price:false}

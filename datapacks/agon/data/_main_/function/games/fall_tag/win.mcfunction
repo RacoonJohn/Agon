@@ -2,10 +2,6 @@ function _main_:games/global/preset/get_game
 tag @a[predicate=_main_:search_game] add myPlayer
 
 
-execute if score #search teamID matches 1 run data modify storage main str set value {text:"Blue",color:"blue"}
-execute if score #search teamID matches 3 run data modify storage main str set value {text:"Red",color:"red"}
-
-
 title @a[tag=myPlayer] subtitle [{text:"the game",color:"gold"}]
 title @a[tag=myPlayer] title [{nbt:"display.temp",storage:"_rin_:intern",interpret:true},{text:" won",color:"gold"}]
 

@@ -18,7 +18,7 @@ function _main_:games/global/player/reset_attribute
 
 scoreboard players set #timer rMath 60
 execute at @s run function _main_:games/global/no_move/set
-scoreboard players set @s invulnerability_ticks 100
+scoreboard players set @s invulnerability_ticks 80
 
 
 execute store result score #test rMath run clear @s #arrows 0

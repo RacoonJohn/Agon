@@ -9,6 +9,7 @@
                 "components": {
                     "max_stack_size": 1,
                     "max_damage": 1000,
+                    "damage":0,
                     "item_model": "big_dripleaf",
                     "item_name": [{"text":"Hover "},{"translate": "block.minecraft.big_dripleaf"}],
                     "custom_data": {"item":"hover_dripleaf"}

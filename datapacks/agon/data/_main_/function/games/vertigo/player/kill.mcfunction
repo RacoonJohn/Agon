@@ -1,11 +1,9 @@
 
 
 tellraw @a[tag=myPlayer] [{selector:"@s"},{text:" fell",color:"red"}]
-
-
 scoreboard players set @s death_detection 1
 
-function _main_:games/vertigo/player/respawn
+function _main_:games/vertigo/player/death
 
 execute at @s run playsound entity.player.big_fall
 

@@ -1,0 +1,16 @@
+{
+    "pools": [{
+        "rolls": 1,
+        "entries": [{
+            "type": "item",
+            "name": "wind_charge",
+            "modifier": [
+            {
+                "type": "set_count",
+                "count": 5
+            },
+            "_rin_:api/cant_drop"
+            ]
+        }]
+    }]
+}

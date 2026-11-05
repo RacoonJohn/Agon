@@ -16,7 +16,8 @@
                         "duration": 3
                     },
                     "weapon":{
-                        "item_damage_per_attack": 1
+                        "item_damage_per_attack": 1,
+                        "disable_blocking_for_seconds": 5
                     },
                     "attribute_modifiers": [{"type": "attack_damage","slot": "mainhand","amount": 1,"operation": "add_value","id": "minecraft:base_attack_damage"}]
                 }

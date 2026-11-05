@@ -7,11 +7,10 @@
             "modifier": [{
                 "type": "set_components",
                 "components": {
-                    "max_damage": 12
+                    "max_damage": 20
                 }
             },
-            "_rin_:api/cant_drop",
-            "_main_:death_delete"
+            "_rin_:api/cant_drop"
             ]
         }]
     }]

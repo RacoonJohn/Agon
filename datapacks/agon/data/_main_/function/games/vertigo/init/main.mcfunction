@@ -1,5 +1,4 @@
 
-
 clear @s
 
 scoreboard players operation @s gameID = #search gameID

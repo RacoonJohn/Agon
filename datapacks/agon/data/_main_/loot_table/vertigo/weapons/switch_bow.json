@@ -8,7 +8,7 @@
                 "type": "set_components",
                 "components": {
                     "enchantments": {"_main_:switch": 1},
-                    "max_damage": 5
+                    "max_damage": 4
                 }
             },
             "_rin_:api/cant_drop"

@@ -2,7 +2,7 @@
   "temperature": 0.8,
   "downfall": 0.4,
   "has_precipitation": true,
-  "attributes": {"visual/sky_color": 13266694,"visual/fog_color": 16776892,"visual/water_fog_color": 0,"visual/cloud_height": -5,"minecraft:visual/cloud_color": -1},
+  "attributes": {"visual/sky_color": 13266694,"visual/fog_color": 16776892,"visual/water_fog_color": 0,"visual/cloud_height": -5.25,"minecraft:visual/cloud_color": -1},
   "effects": {
     "water_color": 0,
     "grass_color": 0,
